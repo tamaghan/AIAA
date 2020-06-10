@@ -1,0 +1,692 @@
+/***************************************************---HEADER---***********************************************/
+
+body {
+    margin: 0px;
+    font-family: "Helvetica";
+    /*padding: 0;*/
+    /*background-color: rgba(7, 64, 73);*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+section:nth-child(2n) {
+    background-color: rgb(22, 22, 22);
+
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+#navv {
+    padding: 10px;
+    z-index: 50;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.stars {
+    /*width: 91rem;*/
+    /*height: 90rem;*/
+    width: 1450px;
+    height: 1000px;
+    z-index: 0;
+    position: fixed;
+}
+
+.rocket {
+    width: 35rem;
+    height: 40rem;
+    z-index: 1;
+    position: fixed;
+}
+
+.sat {
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    position: fixed;
+}
+
+
+.content, .overlay {
+    grid-area: 1 / 1;
+}
+
+@media screen and (min-width: 601px) {
+    div.Name {
+        font-size: 30rem;
+    }
+
+    div.name-head {
+        font-size: 3rem;
+    }
+
+    div.name-foot {
+        font-size: 2rem;
+    }
+
+    div.head-name {
+        padding-top: 105px;
+        z-index: 1;
+    }
+
+    h2.teams {
+        font-size: 10rem;
+    }
+
+    p.team-info {
+        font-size: 5rem;
+    }
+
+    div.marg-10 {
+        margin-top: 10rem;
+    }
+
+    div.marg-20 {
+        margin-top: 20rem;
+    }
+
+    header#head {
+        height: 1830px;
+        display: grid;
+        margin-top: -70px;
+        padding-top: 70px;
+    }
+
+}
+
+/*PHONE*/
+@media screen and (max-width: 600px) {
+    div.Name {
+        font-size: 10rem;
+    }
+
+    div.name-head {
+        font-size: 1rem;
+    }
+
+    div.name-foot {
+        font-size: 1.6rem;
+    }
+
+    div.head-name {
+        padding-top: 30px;
+    }
+
+    h2.teams {
+        font-size: 3rem;
+    }
+
+    p.team-info {
+        font-size: 1rem;
+    }
+
+    div.marg-10 {
+        margin-top: 10rem;
+    }
+
+    div.marg-20 {
+        margin-top: 15rem;
+    }
+
+    header#head {
+        height: 1600px;
+    }
+
+}
+
+.Name {
+    /*background-color: #acdbdb;*/
+    letter-spacing: 0.5rem;
+    color: white;
+    font-weight: lighter;
+    font-family: Tahoma;
+    z-index: 2;
+    line-height: 79%;
+    background-image: linear-gradient(50deg, #fbb040 0%, #f9ed32 74%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name-head {
+    /*background-color: #488643;*/
+    color: white;
+    z-index: 2;
+    line-height: 79%;
+}
+
+.name-foot {
+    /*background-color: #f5884e;*/
+    color: white;
+    z-index: 2;
+    letter-spacing: 1rem;
+    line-height: 79%;
+    margin-top: 25px;
+}
+
+.teams {
+    letter-spacing: 0.5rem;
+    background-image: linear-gradient(50deg, #F54EA2 0%, #FF7676 74%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: lighter;
+    z-index: 0;
+}
+
+.team-info {
+    color: white;
+    letter-spacing: 0.5rem;
+    font-weight: lighter;
+    z-index: 0;
+    /*font-size: 5rem;*/
+    /*        background-image: linear-gradient(50deg, #42E695 0%, #3BB2BB 74%);*/
+    /*background-size: 100%;*/
+    /*background-repeat: repeat;*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+    /*-moz-text-fill-color: transparent;*/
+}
+
+.wah {
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+}
+
+/***************************************************---UB AIAA CHAPTER---***********************************************/
+
+.section-para {
+    width: 80.5%;
+    z-index: 3;
+}
+
+.section-para p {
+    color: black;
+    font-size: larger;
+}
+
+.section-heading {
+    font-size: 4rem;
+    z-index: 2;
+    margin-bottom: 50px;
+    font-family: Avenir;
+    font-weight: bold;
+}
+
+#aiaa-logo {
+    width: 40rem;
+    height: 12rem;
+}
+
+/***************************************************---TEAMS---***********************************************/
+
+.flex-section {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+}
+
+#team-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-container {
+    width: 100%;
+    display: flex;
+    padding: 0 20px 0 20px;
+    justify-content: space-between;
+    z-index: 2;
+    position: absolute;
+}
+
+.teams-logo {
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+}
+
+.team-heading {
+    letter-spacing: 0.5rem;
+    background-image: linear-gradient(50deg, #F54EA2 0%, #FF7676 74%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: lighter;
+    font-size: 5rem;
+}
+
+.trans {
+    background-color: transparent;
+    border: none;
+}
+
+.card-text {
+    font-size: larger;
+}
+
+/***************************************************---Eboard---***********************************************/
+
+.marg-r-30 {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    box-shadow: 1px 1px 10px 2px #bfbaba;
+}
+
+.flex-center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.members-link {
+    margin-top: 30px;
+    background: #dedede;
+    font-size: 0.95rem;
+    width: 8rem;
+    color: black;
+    border-radius: 0.2rem;
+    border: none;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    padding: 0.8em 0.8em 0.78em;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.pad-5 {
+    padding: 0;
+}
+
+.pad-5:hover .eboard-email {
+    display: block;
+    opacity: 1;
+}
+
+.eboard-email {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-top: 120px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.83);
+}
+
+.br-6 {
+    border-radius: 6px;
+}
+
+.members-link:hover {
+    background-image: linear-gradient(50deg, #6ec330 0%, #cbcb26 74%);
+    color: white;
+}
+
+/***************************************************---GALLERY---***********************************************/
+.carousel-inner img {
+    width: 600px;
+    height: 500px;
+}
+
+/***************************************************---Contact---***********************************************/
+#contact {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(31, 98, 102)), color-stop(25%, rgb(79, 128, 24)), color-stop(50%, rgb(143, 75, 22)), color-stop(75%, rgb(153, 24, 27)), color-stop(100%, rgba(130, 100, 70, 1)));
+    background-size: 100% 400%;
+    -webkit-animation: animateGradient 8s infinite;
+    -webkit-animation-delay: 5s;
+    animation-delay: 2s;
+    padding-bottom: 0;
+
+}
+
+@-webkit-keyframes animateGradient {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+/*#contact-form {*/
+/*    !*margin-left: 20%;*!*/
+/*}*/
+
+#contact-container {
+    display: flex;
+    justify-content: center;
+    /*background-color: #F54EA2;*/
+    width: 90%;
+    margin-bottom: 40px;
+    z-index: 2;
+}
+
+#contact-form-container {
+    width: 50%;
+    text-align: center;
+    /*background-color: #fbb040;*/
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+    /*background-color: #65799b;*/
+    z-index: 2;
+}
+
+#footer {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+.social-icons {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.social-icons:hover {
+    color: #fbb040;
+    /*color: #42b3c4;*/
+}
+
+#middle-foot {
+    text-align: center;
+    width: 262px;
+}
+
+#right-foot {
+    width: 262px;
+    text-align: center;
+}
+
+#left-foot {
+    width: 262px;
+    text-align: center;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+
+}
+
+#contact-form button:hover {
+    background: white;
+    color: rgb(19, 56, 111);
+    /*color: #fbb040;*/
+    /*background-image: linear-gradient(50deg, rgb(239, 65, 54) 0%, rgb(251, 176, 64) 74%);*/
+    /*background-image: linear-gradient(50deg, rgb(19, 56, 111) 0%, rgb(48, 255, 255) 74%);*/
+    /*background-image: linear-gradient(50deg, #3037c3 0%, #cbcb26 74%);*/
+}
+
+.ub-link {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 2%;
+    border-radius: 3px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.ub-link:hover {
+    background: white;
+    /*background: #6dbbee;*/
+    color: rgb(19, 56, 111);
+}
+
+/***************************************************---DBF---***********************************************/
+
+.transform {
+    width: 70%;
+    /*left:50%;*/
+    /*top:20%;*/
+    margin-left: -35%;
+    text-align: center;
+    font-size: 150%;
+. transform-origin(50 %, 50 %);
+}
+
+#dbf-head {
+    height: 2600px;
+    margin-top: -70px;
+}
+
+#easing_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#easing {
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+}
+
+.airplane {
+    width: 20rem;
+    height: 10rem;
+    z-index: 2;
+    position: fixed;
+}
+
+.cloud {
+    width: 500px;
+    height: 250px;
+    z-index: 0;
+    top: 15%;
+    position: fixed;
+    /*background-color: #97ebf4;*/
+
+}
+
+.cloud2 {
+    width: 1000px;
+    height: 500px;
+    z-index: 0;
+    top: 70%;
+    position: fixed;
+}
+
+.cloud3 {
+    width: 500px;
+    height: 250px;
+    z-index: 1;
+    top: 55%;
+    position: fixed;
+}
+
+.cloud4 {
+    width: 800px;
+    height: 450px;
+    z-index: 1;
+    top: 25%;
+    position: fixed;
+}
+
+.cloud5 {
+    width: 800px;
+    height: 450px;
+    z-index: 0;
+    top: 30%;
+    position: fixed;
+}
+
+.buildings {
+    width: 110rem;
+    height: 700px;
+    z-index: 2;
+    position: fixed;
+}
+
+.moon {
+    width: 20rem;
+    height: 20rem;
+    z-index: 1;
+    left: 3%;
+    position: fixed;
+}
+
+.sun {
+    width: 20rem;
+    height: 20rem;
+    z-index: 1;
+    left: 70%;
+    position: fixed;
+}
+
+.initials {
+    /*background-image: linear-gradient(50deg, rgb(135, 51, 160) 0%, rgb(197, 51, 100) 74%);*/
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    /*font-weight: lighter;*/
+    font-size: 5rem;
+}
+
+.about-logo {
+    width: 250px;
+    height: 250px;
+}
+/**********---MICRO-G---*****************************---MICRO-G---*************************************---MICRO-G---************************************************************************/
+#micro--head {
+    height: 2600px;
+    margin-top: -70px;
+}
+/**************************************************---EXTRAS---***********************************************/
+
+
+.inline {
+    display: inline;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.relative {
+    position: relative;
+}
+
+.stick {
+    position: fixed;
+}
+
+.black {
+    background-color: black;
+}
+
+.pad-50 {
+    padding-top: 105px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.yellow-grad {
+    background-image: linear-gradient(50deg, #fbb040 0%, #f9ed32 74%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.blue-grad {
+    background-image: linear-gradient(50deg, #65799b 0%, #5e2563 74%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.h-80 {
+    height: 40rem;
+}
