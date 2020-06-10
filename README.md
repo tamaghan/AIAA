@@ -4,7 +4,7 @@ A Website Portfolio for AIAA (American Institute of Aeronautics and Astronautics
 
 - Currently in Progress: You can checkout the progress of the Website under Proects tab on Github.
 
-- Currently accessible at "tamaghan.github.io" will soon cheange it to a custom domain
+- Currently accessible at www.tamaghan.github.io will soon add custom domain.
 
 
 
