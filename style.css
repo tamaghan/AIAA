@@ -1,6 +1,6 @@
 /**************************************************---COVER- DELETE LATER---***********************************************/
-#cover-body{
-     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(0, 0, 0)), color-stop(25%, rgb(28, 28, 28)), color-stop(50%, rgb(107, 107, 107)), color-stop(75%, rgb(0, 0, 0)), color-stop(100%, rgba(130, 100, 70, 0)));
+#cover-body {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(0, 0, 0)), color-stop(25%, rgb(28, 28, 28)), color-stop(50%, rgb(107, 107, 107)), color-stop(75%, rgb(0, 0, 0)), color-stop(100%, rgba(130, 100, 70, 0)));
     background-size: 100% 500%;
     -webkit-animation: animateGradient 5s infinite;
     -webkit-animation-delay: 4s;
@@ -8,32 +8,39 @@
     padding-bottom: 0;
     height: 100%;
     width: 100%;
-    margin:0px;
+    margin: 0;
     padding: 0;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
-#naming h1, h2{
+
+#naming h1, h2 {
     color: white;
     letter-spacing: 1px;
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 5rem;
 }
+
 /***************************************************---HEADER---***********************************************/
 
 body {
-    height: 100%;
-    margin: 0px;
+    /*height: 100%;*/
+    width: 100%;
+    margin: 0;
+    top:0;
+	right:0;
+	bottom:0;
+	left:0;
     font-family: "Helvetica";
 }
-
 html {
-    margin: 0px;
+    margin: 0;
     padding: 0;
     height: 100%;
-    scroll-behavior: smooth;
+    width: 100%;
+    /*scroll-behavior: smooth;*/
 }
 
 section {
@@ -45,62 +52,39 @@ section {
 }
 
 section:nth-child(2n) {
-    background-color: rgb(22, 22, 22);
+     background-color: white;
 
 }
 
 section:nth-child(2n + 1) {
-    background-color: white;
-}
+    background-color: rgb(22, 22, 22);
 
-#navv {
-    padding: 10px;
-    z-index: 50;
 }
-
 .nav-link {
     font-size: 20px;
 }
-
-.stars {
-    /*width: 91rem;*/
-    /*height: 90rem;*/
-    width: 1450px;
-    height: 1000px;
-    z-index: 0;
-    position: fixed;
-}
-
-.rocket {
-    width: 35rem;
-    height: 40rem;
-    z-index: 1;
-    position: fixed;
-}
-
-.sat {
-    width: 400px;
-    height: 400px;
-    z-index: 1;
-    position: fixed;
-}
-
-
 .content, .overlay {
     grid-area: 1 / 1;
 }
 
 @media screen and (min-width: 601px) {
-    div.Name {
-        font-size: 30rem;
+    .nav-mobile{
+        display: none;
+    }
+    #navv {
+    padding: 10px;
+    z-index: 5;
+}
+    div.name-head {
+        font-size: 3.1vw;
     }
 
-    div.name-head {
-        font-size: 3rem;
+    div.Name {
+        font-size: 32vw;
     }
 
     div.name-foot {
-        font-size: 2rem;
+        font-size: 3vw;
     }
 
     div.head-name {
@@ -109,11 +93,11 @@ section:nth-child(2n + 1) {
     }
 
     h2.teams {
-        font-size: 10rem;
+        font-size: 13vw;
     }
 
     p.team-info {
-        font-size: 5rem;
+        font-size: 7vw;
     }
 
     div.marg-10 {
@@ -130,25 +114,104 @@ section:nth-child(2n + 1) {
         margin-top: -70px;
         padding-top: 70px;
     }
+    .stars {
+    width: 100%;
+    height: 1000px;
+    z-index: 0;
+    position: fixed;
+}
+    .rocket {
+    width: 40vw;
+    height: 45vw;
+    z-index: 1;
+    position: fixed;
+    left:70%;
+}
+    .sat {
+    width: 30vw;
+    height: 30vw;
+    z-index: 1;
+    position: fixed;
+}
+    .flex-section {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    /*background-color: #F54EA2;*/
+}
 
+#team-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-container {
+    width: 100%;
+    display: flex;
+    padding: 0 20px 0 20px;
+    justify-content: space-between;
+    z-index: 2;
+    position: absolute;
+}
+
+.teams-logo {
+    width: 17vw;
+    height: 17vw;
+    z-index: 1;
+}
+
+.team-heading {
+    letter-spacing: 0.5rem;
+    background-image: linear-gradient(50deg, #F54EA2 0%, #FF7676 74%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: lighter;
+    font-size: 5.7vw;
+}
+
+.trans {
+    background-color: transparent;
+    border: none;
+    width: 35%;
+    height: 30%;
+    /*background-color: #cbcb26;*/
+}
 }
 
 /*PHONE*/
 @media screen and (max-width: 600px) {
+    .nav-mobile{
+        display: block;
+    }
+    #navv {
+    display: none;
+    }
     div.Name {
-        font-size: 10rem;
+        font-size: 37vw;
     }
 
     div.name-head {
-        font-size: 1rem;
+        font-size: 8vw;
     }
 
     div.name-foot {
-        font-size: 1.6rem;
+        font-size: 3vw;
     }
 
     div.head-name {
-        padding-top: 30px;
+        position: relative;
+        top: 10%;
+        /*padding-top: 100px;*/
+        z-index: 1;
     }
 
     h2.teams {
@@ -168,9 +231,33 @@ section:nth-child(2n + 1) {
     }
 
     header#head {
-        height: 1600px;
+        height: 1400px;
+        display: grid;
+        padding-top: 100px;
     }
+    .stars {
+    width: 200vw;
+    height: 1000px;
+    z-index: 0;
+    position: fixed;
+}
+    .rocket {
+    width: 35rem;
+    height: 40rem;
+    z-index: 1;
+    position: fixed;
+    left:20%;
+}
+    .sat {
+    width: 80vw;
+    height: 80vw;
+    z-index: 1;
+    position: fixed;
+}
 
+    #team-container {
+    display: none;
+}
 }
 
 .Name {
@@ -257,68 +344,18 @@ section:nth-child(2n + 1) {
 }
 
 #aiaa-logo {
-    width: 40rem;
-    height: 12rem;
+    width: 35vw;
+    height: 15vw;
 }
 
 /***************************************************---TEAMS---***********************************************/
-
-.flex-section {
-    width: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    z-index: 2;
-}
-
-#team-container {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#logo-container {
-    width: 100%;
-    display: flex;
-    padding: 0 20px 0 20px;
-    justify-content: space-between;
-    z-index: 2;
-    position: absolute;
-}
-
-.teams-logo {
-    width: 250px;
-    height: 250px;
-    z-index: 1;
-}
-
-.team-heading {
-    letter-spacing: 0.5rem;
-    background-image: linear-gradient(50deg, #F54EA2 0%, #FF7676 74%);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    font-weight: lighter;
-    font-size: 5rem;
-}
-
-.trans {
-    background-color: transparent;
-    border: none;
-}
-
 .card-text {
     font-size: larger;
 }
-
 /***************************************************---Eboard---***********************************************/
 
 .marg-r-30 {
+    width: 20vw;
     margin-left: 15px;
     margin-right: 15px;
     border-style: solid;
@@ -329,10 +366,12 @@ section:nth-child(2n + 1) {
 
 .flex-center {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 .members-link {
     margin-top: 30px;
@@ -384,18 +423,22 @@ section:nth-child(2n + 1) {
 
 /***************************************************---GALLERY---***********************************************/
 .carousel-inner img {
-    width: 600px;
-    height: 500px;
+    width: 50vw;
+    height: 40vw;
+}
+#gallery-container{
+    width:60%;
 }
 /***************************************************---DASHBOARD---***********************************************/
 
-#dashboard-container{
+#dashboard-container {
     width: 80.5%;
     height: 35rem;
     /*background-color: #bfbaba;*/
 }
-#dash-back{
-    width:100%;
+
+#dash-back {
+    width: 100%;
     height: 90%;
     display: flex;
     justify-content: center;
@@ -403,23 +446,27 @@ section:nth-child(2n + 1) {
     padding: 20px;
     overflow: auto;
 }
-#dash-body{
+
+#dash-body {
     /*background-color: #cccccc;*/
     width: 100%;
     height: 100%;
 }
-#meetings{
+
+#meetings {
     display: flex;
     justify-content: space-evenly;
     height: 100%;
 }
-#events{
+
+#events {
     display: flex;
     justify-content: space-evenly;
     height: 100%;
     display: none;
 }
-.dash-teams{
+
+.dash-teams {
     background-color: #cfcccc;
     width: 40%;
     border-radius: 0.5rem;
@@ -427,32 +474,40 @@ section:nth-child(2n + 1) {
     border-width: 0px;
     box-shadow: 1px 1px 5px 2px #bfbaba;
 }
-#list-tab{
+
+#list-tab {
     padding-top: 20px;
 }
-.dash-card-body{
+
+.dash-card-body {
     padding: 5px;
 }
-.dash-card{
+
+.dash-card {
     color: white;
     border: none;
     box-shadow: 1px 1px 5px 2px #bfbaba;
 }
-.dbf{
+
+.dbf {
     background-image: linear-gradient(50deg, #8fbe5d 0%, #6eaf26 74%);
 }
-.micro{
+
+.micro {
     background-image: linear-gradient(50deg, #fc6e51 0%, #db391e 74%);
 }
-.club{
+
+.club {
     background-image: linear-gradient(50deg, #622774 0%, #c53364 74%);
 }
-.column{
+
+.column {
     margin: 0;
     width: 30%;
     /*background-color: #cbcb26;*/
-     height: 100%;
+    height: 100%;
 }
+
 /***************************************************---Contact---***********************************************/
 #contact {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(31, 98, 102)), color-stop(25%, rgb(79, 128, 24)), color-stop(50%, rgb(143, 75, 22)), color-stop(75%, rgb(153, 24, 27)), color-stop(100%, rgba(130, 100, 70, 1)));
@@ -686,7 +741,7 @@ textarea {
 }
 
 .buildings {
-    width: 110rem;
+    width: 110%;
     height: 700px;
     z-index: 2;
     position: fixed;
@@ -723,11 +778,13 @@ textarea {
     width: 250px;
     height: 250px;
 }
+
 /**********---MICRO-G---*****************************---MICRO-G---*************************************---MICRO-G---************************************************************************/
 #micro--head {
     height: 2600px;
     margin-top: -70px;
 }
+
 /**************************************************---EXTRAS---***********************************************/
 
 

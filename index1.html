@@ -13,7 +13,35 @@
 </head>
 
 <body>
-
+<div class="fixed-top nav-mobile" data-0="opacity:1; background-color: rgba(7, 64, 73, 0);"
+     data-500=" opacity:0; background-color: rgba(0, 0, 0, 0);"
+     data-1800="background-color: rgba(0, 0, 0 ,1);" data-1900="opacity:1; background-color: rgba(7, 64, 73, 1);">
+    <div style="background-color:gray;" class="collapse" id="navbarToggleExternalContent">
+        <ul class="nav justify-content-center ">
+            <li class="nav-item">
+                <a class="nav-link white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="dbf.html">DBF</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="microg.html">Micro-G</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="members.html">Members</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</div>
 <nav id="navv" data-0="opacity:1; background-color: rgba(7, 64, 73, 0);"
      data-500=" opacity:0; background-color: rgba(0, 0, 0, 0);"
      data-1800="background-color: rgba(0, 0, 0 ,1);" data-1900="opacity:1; background-color: rgba(7, 64, 73, 1);"
@@ -36,16 +64,14 @@
         </li>
     </ul>
 </nav>
-
 <header id="head" data-0="background-image: linear-gradient(50deg, rgb(87,202,133) 0%, rgb(24,78,104)  74%);"
         data-500=" background-image: linear-gradient(50deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 74%);">
     <img src="images/sat.png" class="sat content" data-0="left:0%;display:block; " data-400="left:-100%; display:none;">
-    <img src="images/rocket.png" class="rocket content" data-0="left:70%; display:block; top: 50%"
+    <img src="images/rocket.png" class="rocket content" data-0="display:block; top: 50%"
          data-300="top:-100%; display:none;">
     <img src="images/dots.PNG" class="stars content" data-0="top:0%;display:block; " data-400="top:-20%; opacity:1; "
          data-700="  opacity:0; display:none;">
-
-    <div class="text-center head-name overlay">
+    <div class="text-center head-name ">
         <div class="name-head">
             American Institute of Aeronautics and Astronautics
         </div>
@@ -87,7 +113,6 @@
         <img id="aiaa-logo" src="images/aiaa_logo.png">
     </div>
 </section>
-
 <section id="Teams">
     <h1 style="margin-bottom: 10px" class="section-heading yellow-grad">
         Teams
@@ -99,14 +124,12 @@
             </div>
             <div>
                 <img src="images/logo-dbf.png" class="teams-logo" alt="dbf logo" data-aos="flip-down">
-
             </div>
 
         </div>
         <div class="flex-section ">
-            <div class="card text-right trans " style="width: 25rem;">
+            <div class="card text-right trans ">
                 <div class="card-body">
-
                     <h5 class="card-title team-heading">Micro-G</h5>
                     <h6 class="card-subtitle mb-2 white text-muted">Neutral Buoyancy Experiment Design Teams</h6>
                     <p class="card-text white">Some quick example text to build on the card title and make up the bulk
@@ -120,7 +143,7 @@
                     <a href="microg.html" class="card-link">More Info</a>
                 </div>
             </div>
-            <div class="card text-left trans" style="width: 25rem;">
+            <div class="card text-left trans">
                 <div class="card-body">
                     <h5 class="card-title team-heading">DBF</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Design/Build/Fly</h6>
@@ -138,15 +161,17 @@
             </div>
         </div>
     </div>
+    <div>
 
+    </div>
 </section>
 <section>
     <h1 class="section-heading blue-grad">
         E-Board
     </h1>
-    <div style="width: 80.5%" class="text-center flex-center">
+    <div class="text-center flex-center section-container">
         <a class="btn pad-5" href="#" role="button">
-            <div class="card marg-r-30 br-6" data-aos="flip-up" style="width: 18rem;">
+            <div class="card marg-r-30 br-6" data-aos="flip-up" >
                 <div class="eboard-email"> president@buffalo.edu</div>
                 <img src="images/pic.jpg" class="card-img-top" alt="...">
                 <!--                Put names in alt-->
@@ -157,7 +182,7 @@
             </div>
         </a>
         <a class="btn pad-5" href="#" role="button">
-            <div class="card marg-r-30 br-6" data-aos="flip-down" style="width: 18rem;">
+            <div class="card marg-r-30 br-6" data-aos="flip-down" >
                 <div class="eboard-email"> @buffalo.edu</div>
                 <img src="images/pic.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -167,7 +192,7 @@
             </div>
         </a>
         <a class="btn pad-5" href="#" role="button">
-            <div class="card marg-r-30 br-6" data-aos="flip-up" style="width: 18rem;">
+            <div class="card marg-r-30 br-6" data-aos="flip-up" >
                 <div class="eboard-email"> @buffalo.edu</div>
                 <img src="images/pic.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -179,7 +204,7 @@
     </div>
     <div style="width: 80.5%; margin-top: 20px" class="text-center flex-center">
         <a class="btn pad-5" href="#" role="button">
-            <div class="card marg-r-30 br-6" data-aos="flip-down" style="width: 18rem;">
+            <div class="card marg-r-30 br-6" data-aos="flip-down" >
                 <div class="eboard-email"> @buffalo.edu</div>
                 <img src="images/pic.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -189,7 +214,7 @@
             </div>
         </a>
         <a class="btn pad-5" href="#" role="button">
-            <div class="card marg-r-30 br-6" data-aos="flip-up" style="width: 18rem;">
+            <div class="card marg-r-30 br-6" data-aos="flip-up">
                 <div class="eboard-email"> @buffalo.edu</div>
                 <img src="images/pic.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -206,8 +231,8 @@
     <h1 class="section-heading yellow-grad">
         Gallery
     </h1>
-    <div style="width: 60.5%">
-        <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
+    <div id="gallery-container">
+        <div  id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -256,7 +281,7 @@
             <div id="prog" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
         </div>
-         <div id="dash-back">
+        <div id="dash-back">
             <div class="list-group" id="list-tab" role="tablist">
                 <a onclick="show_meeting()" class=" list-group-item list-group-item-action active"
                    data-toggle="list"
@@ -266,7 +291,7 @@
                    href="#events" role="tab" aria-controls="profile">Events</a>
             </div>
             <div id="dash-body">
-                <div id="meetings" >
+                <div id="meetings">
                     <div class="column">
                         <center>
                             <h3 class="dash-teams">DBF</h3>
@@ -282,7 +307,7 @@
                         <center>
                             <h3 class="dash-teams">Micro-g</h3>
                         </center>
-                       <div class="card dash-card micro text-center dash-cards">
+                        <div class="card dash-card micro text-center dash-cards">
                             <div class="card-body dash-card-body">
                                 <h5 class="card-title">12th November</h5>
                                 <p class="card-text white"><small class=" white">2pm at knox Hall 208</small></p>
@@ -302,7 +327,7 @@
                     </div>
                 </div>
                 <div id="events">
-                   <div class="column">
+                    <div class="column">
                         <center>
                             <h3 class="dash-teams">DBF</h3>
                         </center>
@@ -317,7 +342,7 @@
                         <center>
                             <h3 class="dash-teams">Micro-g</h3>
                         </center>
-                       <div class="card dash-card micro text-center dash-cards">
+                        <div class="card dash-card micro text-center dash-cards">
                             <div class="card-body dash-card-body">
                                 <h5 class="card-title">Event</h5>
                                 <p class="card-text white"><small class=" white">5pm at Davis Hall 208</small></p>
