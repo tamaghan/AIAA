@@ -55,13 +55,11 @@ section {
 }
 
 section:nth-child(2n) {
-    background-color: white;
-
+    background-color: rgb(22, 22, 22);
 }
 
 section:nth-child(2n + 1) {
-    background-color: rgb(22, 22, 22);
-
+    background-color: white;
 }
 
 .nav-link {
@@ -92,11 +90,11 @@ section:nth-child(2n + 1) {
 
     div.name-foot {
         font-size: 3vw;
-          color: white;
-    z-index: 2;
-    letter-spacing: 1rem;
-    line-height: 79%;
-    margin-top: 25px;
+        color: white;
+        z-index: 2;
+        letter-spacing: 1rem;
+        line-height: 79%;
+        margin-top: 25px;
     }
 
     div.head-name {
@@ -205,6 +203,23 @@ section:nth-child(2n + 1) {
         height: 30%;
         /*background-color: #cbcb26;*/
     }
+    #aiaa-logo {
+    width: 35vw;
+    height: 15vw;
+}
+    .section-para p {
+    color: black;
+    font-size: larger;
+}
+     #team-container-mobile{
+        display: none;
+    }
+     #eboard-container{
+        display: block;
+    }
+     #eboard-container-mobile{
+        display: none;
+    }
 }
 
 /*PHONE*/
@@ -263,7 +278,7 @@ section:nth-child(2n + 1) {
     }
 
     .head-mobile {
-        height: 1830px;
+        height: 1700px;
         display: grid;
         padding-top: 100px;
     }
@@ -290,9 +305,41 @@ section:nth-child(2n + 1) {
         position: fixed;
         top: 5%;
     }
+      .team-heading {
+        letter-spacing: 0.5rem;
+        background-image: linear-gradient(50deg, #F54EA2 0%, #FF7676 74%);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        font-weight: lighter;
+        font-size: 10vw;
+    }
+
+    #team-container-mobile{
+        display: block;
+    }
 
     #team-container {
         display: none;
+    }
+
+    #aiaa-logo {
+    width: 70vw;
+    height: 30vw;
+    }
+    .section-para p {
+    color: black;
+    font-size: larger;
+        text-align: justify;
+    text-justify: inter-word;
+}
+    #eboard-container{
+        display: none;
+    }
+    #eboard-container-mobile{
+
     }
 }
 
@@ -317,7 +364,6 @@ section:nth-child(2n + 1) {
     z-index: 2;
     line-height: 79%;
 }
-
 
 
 .teams {
@@ -359,23 +405,18 @@ section:nth-child(2n + 1) {
     z-index: 3;
 }
 
-.section-para p {
-    color: black;
-    font-size: larger;
-}
+
 
 .section-heading {
     font-size: 4rem;
     z-index: 2;
+    text-align: center;
     margin-bottom: 50px;
     font-family: Avenir;
     font-weight: bold;
+    align-items: center;
 }
 
-#aiaa-logo {
-    width: 35vw;
-    height: 15vw;
-}
 
 /***************************************************---TEAMS---***********************************************/
 .card-text {
