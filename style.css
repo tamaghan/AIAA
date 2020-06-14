@@ -247,6 +247,19 @@ section:nth-child(2n + 1) {
     width: 55vw;
     height: 45vw;
 }
+    #dashboard-container {
+    width: 80.5%;
+    height: 35rem;
+    /*background-color: #bfbaba;*/
+}
+    #dashboard-container-mobile{
+        display: none;
+    }
+    #meetings {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
 }
 
 /*PHONE*/
@@ -396,12 +409,19 @@ section:nth-child(2n + 1) {
         display: none
     }
 
-    #gallery-container-mobile {
-
-    }
     .carousel-inner img {
     /*width: 55vw;*/
     height: 75vw;
+}
+    #dashboard-container {
+    display: none;
+}
+    #dashboard-container-mobile{
+        width: 90%;
+        text-align: center;
+    }
+    #meetings {
+    height: 100%;
 }
 }
 
@@ -550,10 +570,8 @@ section:nth-child(2n + 1) {
 
 /***************************************************---DASHBOARD---***********************************************/
 
-#dashboard-container {
-    width: 80.5%;
-    height: 35rem;
-    /*background-color: #bfbaba;*/
+.mobile-card{
+    width: 30%;
 }
 
 #dash-back {
@@ -572,11 +590,7 @@ section:nth-child(2n + 1) {
     height: 100%;
 }
 
-#meetings {
-    display: flex;
-    justify-content: space-evenly;
-    height: 100%;
-}
+
 
 #events {
     display: flex;

@@ -421,6 +421,81 @@
     <h1 class="section-heading blue-grad">
         DashBoard
     </h1>
+    <div id="dashboard-container-mobile">
+        <div style="margin-bottom: 20px" class="progress">
+            <div id="prog" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+        </div>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-outline-success btn-secondary active">
+                <input onclick="show_meeting_mobile()" type="radio" name="options" id="option1" checked> Meetings
+            </label>
+            <label class="btn btn-outline-success btn-secondary">
+                <input onclick="show_event_mobile()" type="radio" name="options" id="option3"> Events
+            </label>
+        </div>
+        <div id="dash-body" style="padding-top: 20px">
+            <div id="meetings">
+                <div class="eboard-row" style="margin-top: 0">
+                    <div class="card" style="width: 12rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">meeting</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">03-05-2020</h6>
+                            <p class="card-text">DAVIS 305 at 5pm</p>
+                        </div>
+                    </div>
+                   <div class="card" style="width: 12rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">meeting</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">03-05-2020</h6>
+                            <p class="card-text">DAVIS 305 at 5pm</p>
+                        </div>
+                    </div>
+                </div>
+<!--                to add more-->
+                <div class="eboard-row" style="margin-top: 10px">
+                   <div class="card" style="width: 12rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">meeting</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">03-05-2020</h6>
+                            <p class="card-text">DAVIS 305 at 5pm</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 12rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">meeting</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">03-05-2020</h6>
+                            <p class="card-text">DAVIS 305 at 5pm</p>
+                        </div>
+                    </div>
+                </div>
+<!--                to add more-->
+            </div>
+            <div id="events">
+                <div class="eboard-row" style="margin-top: 0">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">event</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">event</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <a class="btn members-link " href="dbf.html#dashboard" role="button">DBF Dashboard</a>
+    <a class="btn members-link " href="microg.html#dashboard" role="button">Micro-g Dashboard</a>
+
+    </div>
     <div id="dashboard-container">
         <div style="margin-bottom: 20px" class="progress">
             <div id="prog" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
