@@ -238,7 +238,7 @@ section:nth-child(2n + 1) {
     }
 
     div.name-head {
-        font-size: 8vw;
+        font-size: 8.5vw;
     }
 
     div.name-foot {
@@ -251,18 +251,20 @@ section:nth-child(2n + 1) {
     }
 
     div.head-name {
-        position: relative;
-        top: 10%;
-        /*padding-top: 100px;*/
         z-index: 1;
+         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
     }
 
     h2.teams {
-        font-size: 3rem;
+        font-size: 20vw;
     }
 
     p.team-info {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     div.marg-10 {
@@ -278,7 +280,7 @@ section:nth-child(2n + 1) {
     }
 
     .head-mobile {
-        height: 1700px;
+        height: 1900px;
         display: grid;
         padding-top: 100px;
     }
@@ -293,9 +295,9 @@ section:nth-child(2n + 1) {
     .rocket {
         width: 35rem;
         height: 40rem;
-        z-index: -1;
+        z-index: 1;
         position: fixed;
-        left: 20%;
+        left: 23%;
     }
 
     .sat {
@@ -313,8 +315,8 @@ section:nth-child(2n + 1) {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
-        font-weight: lighter;
-        font-size: 10vw;
+        /*font-weight: lighter;*/
+        font-size: 11vw;
     }
 
     #team-container-mobile{
