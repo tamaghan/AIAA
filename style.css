@@ -243,50 +243,59 @@ section:nth-child(2n + 1) {
     #gallery-container-mobile {
         display: none;
     }
+
     .carousel-inner img {
-    width: 55vw;
-    height: 45vw;
-}
+        width: 55vw;
+        height: 45vw;
+    }
+
     #dashboard-container {
-    width: 80.5%;
-    height: 35rem;
-    /*background-color: #bfbaba;*/
-}
-    #dashboard-container-mobile{
+        width: 80.5%;
+        height: 35rem;
+        /*background-color: #bfbaba;*/
+    }
+
+    #dashboard-container-mobile {
         display: none;
     }
- #footer-mobile{
+
+    #footer-mobile {
         display: none;
-   }
-   #footer {
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    width: 100%;
-    color: white;
-}
-   #contact-container {
-    display: flex;
-    justify-content: center;
-    /*background-color: #F54EA2;*/
-    width: 90%;
-    margin-bottom: 40px;
-    z-index: 2;
-}
-   #contact-container-mobile{
-       display: none;
-   }
-   #contact-form-container {
-    width: 50%;
-    text-align: center;
-    /*background-color: #fbb040;*/
-}
-   #my-details-container {
-    width: 35%;
-    margin-left: 6%;
-    /*background-color: #65799b;*/
-    z-index: 2;
-}
+    }
+
+    #footer {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        width: 100%;
+        color: white;
+    }
+
+    #contact-container {
+        display: flex;
+        justify-content: center;
+        /*background-color: #F54EA2;*/
+        width: 90%;
+        margin-bottom: 40px;
+        z-index: 2;
+    }
+
+    #contact-container-mobile {
+        display: none;
+    }
+
+    #contact-form-container {
+        width: 50%;
+        text-align: center;
+        /*background-color: #fbb040;*/
+    }
+
+    #my-details-container {
+        width: 35%;
+        margin-left: 6%;
+        /*background-color: #65799b;*/
+        z-index: 2;
+    }
 
 }
 
@@ -438,39 +447,46 @@ section:nth-child(2n + 1) {
     }
 
     .carousel-inner img {
-    /*width: 55vw;*/
-    height: 75vw;
-}
+        /*width: 55vw;*/
+        height: 75vw;
+    }
+
     #dashboard-container {
-    display: none;
-}
-    #dashboard-container-mobile{
+        display: none;
+    }
+
+    #dashboard-container-mobile {
         width: 90%;
         text-align: center;
         height: 40rem;
     }
-    #footer{
+
+    #footer {
         display: none;
     }
-      #contact-container {
-    display: none;
-}
-   #contact-container-mobile{
-       text-align: center;
-   }
-   #contact-form-container {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-}
-   #my-details-container {
-       padding-top: 50px;
-    width: 100%;
-   margin: 0 auto;
-       text-align: center;
-    z-index: 2;
-       padding-bottom: 20px;
-}
+
+    #contact-container {
+        display: none;
+    }
+
+    #contact-container-mobile {
+        text-align: center;
+    }
+
+    #contact-form-container {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #my-details-container {
+        padding-top: 40px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 2;
+        padding-bottom: 20px;
+    }
 
 }
 
@@ -616,10 +632,9 @@ section:nth-child(2n + 1) {
 /***************************************************---GALLERY---***********************************************/
 
 
-
 /***************************************************---DASHBOARD---***********************************************/
 
-.mobile-card{
+.mobile-card {
     width: 30%;
 }
 
@@ -640,20 +655,21 @@ section:nth-child(2n + 1) {
 }
 
 
-
 #events {
     display: flex;
     justify-content: space-evenly;
     height: 100%;
     display: none;
 }
-#meetings-desk{
+
+#meetings-desk {
     display: flex;
     justify-content: space-between;
     height: 100%;
 }
-#events-desk{
-     display: flex;
+
+#events-desk {
+    display: flex;
     justify-content: space-evenly;
     height: 100%;
     display: none;
@@ -681,6 +697,7 @@ section:nth-child(2n + 1) {
     border: none;
     box-shadow: 1px 1px 5px 2px #bfbaba;
 }
+
 .dash-card-mobile {
     border: none;
     box-shadow: 1px 1px 5px 2px #bfbaba;
@@ -697,6 +714,7 @@ section:nth-child(2n + 1) {
 .club {
     background-image: linear-gradient(50deg, #622774 0%, #c53364 74%);
 }
+
 .club-mobile {
     background-image: linear-gradient(50deg, #000000 0%, #4c2a2a 74%);
 }
@@ -739,12 +757,6 @@ section:nth-child(2n + 1) {
 /*#contact-form {*/
 /*    !*margin-left: 20%;*!*/
 /*}*/
-
-
-
-
-
-
 
 
 .social-icons {
