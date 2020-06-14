@@ -26,22 +26,23 @@
 /***************************************************---HEADER---***********************************************/
 
 body {
-    -webkit-overflow-scrolling:touch;
+    -webkit-overflow-scrolling: touch;
     height: 100%;
     width: 100%;
     margin: 0;
-    top:0;
-	right:0;
-	bottom:0;
-	left:0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     font-family: "Helvetica";
 }
+
 html {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    -webkit-overflow-scrolling:touch;
+    -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 }
 
@@ -54,7 +55,7 @@ section {
 }
 
 section:nth-child(2n) {
-     background-color: white;
+    background-color: white;
 
 }
 
@@ -62,21 +63,25 @@ section:nth-child(2n + 1) {
     background-color: rgb(22, 22, 22);
 
 }
+
 .nav-link {
     font-size: 20px;
 }
+
 .content, .overlay {
     grid-area: 1 / 1;
 }
 
 @media screen and (min-width: 601px) {
-    .nav-mobile{
+    .nav-mobile {
         display: none;
     }
+
     #navv {
-    padding: 10px;
-    z-index: 5;
-}
+        padding: 10px;
+        z-index: 5;
+    }
+
     div.name-head {
         font-size: 3.1vw;
     }
@@ -110,93 +115,103 @@ section:nth-child(2n + 1) {
         margin-top: 20rem;
     }
 
-    header#head {
+    #head {
         height: 1830px;
         display: grid;
         margin-top: -70px;
         padding-top: 70px;
     }
+
+    .head-mobile {
+        display: none;
+    }
+
     .stars {
-    width: 100%;
-    height: 1000px;
-    z-index: 0;
-    position: fixed;
-}
+        width: 100%;
+        height: 1000px;
+        z-index: 0;
+        position: fixed;
+    }
+
     .rocket {
-    width: 40vw;
-    height: 45vw;
-    z-index: 1;
-    position: fixed;
-    left:70%;
-}
+        width: 40vw;
+        height: 45vw;
+        z-index: 1;
+        position: fixed;
+        left: 70%;
+    }
+
     .sat {
-    width: 30vw;
-    height: 30vw;
-    z-index: 1;
-    position: fixed;
-}
+        width: 30vw;
+        height: 30vw;
+        z-index: 1;
+        position: fixed;
+    }
+
     .flex-section {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    z-index: 2;
-    /*background-color: #F54EA2;*/
-}
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        /*background-color: #F54EA2;*/
+    }
 
-#team-container {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+    #team-container {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
-#logo-container {
-    width: 100%;
-    display: flex;
-    padding: 0 20px 0 20px;
-    justify-content: space-between;
-    z-index: 2;
-    position: absolute;
-}
+    #logo-container {
+        width: 100%;
+        display: flex;
+        padding: 0 20px 0 20px;
+        justify-content: space-between;
+        z-index: 2;
+        position: absolute;
+    }
 
-.teams-logo {
-    width: 17vw;
-    height: 17vw;
-    z-index: 1;
-}
+    .teams-logo {
+        width: 17vw;
+        height: 17vw;
+        z-index: 1;
+    }
 
-.team-heading {
-    letter-spacing: 0.5rem;
-    background-image: linear-gradient(50deg, #F54EA2 0%, #FF7676 74%);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    font-weight: lighter;
-    font-size: 5.7vw;
-}
+    .team-heading {
+        letter-spacing: 0.5rem;
+        background-image: linear-gradient(50deg, #F54EA2 0%, #FF7676 74%);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        font-weight: lighter;
+        font-size: 5.7vw;
+    }
 
-.trans {
-    background-color: transparent;
-    border: none;
-    width: 35%;
-    height: 30%;
-    /*background-color: #cbcb26;*/
-}
+    .trans {
+        background-color: transparent;
+        border: none;
+        width: 35%;
+        height: 30%;
+        /*background-color: #cbcb26;*/
+    }
 }
 
 /*PHONE*/
 @media screen and (max-width: 600px) {
-    .nav-mobile{
+    .nav-mobile {
         display: block;
     }
+
     #navv {
-    display: none;
+        display: none;
     }
+
     div.Name {
         font-size: 37vw;
     }
@@ -232,35 +247,41 @@ section:nth-child(2n + 1) {
         margin-top: 15rem;
     }
 
-    header#head {
-        height: 1400px;
-        display: grid;
-        padding-top: 100px;
-        -webkit-overflow-scrolling:touch;
+    #head {
+        display: none;
     }
+
+    .head-mobile {
+        height: 60rem;
+        padding-top: 120px;
+        background-image: linear-gradient(50deg, rgb(87, 202, 133) 0%, rgb(24, 78, 104) 74%);
+    }
+
     .stars {
-    width: 200vw;
-    height: 1000px;
-    z-index: 0;
-    position: fixed;
-}
+        width: 200vw;
+        height: 1000px;
+        z-index: 0;
+        position: fixed;
+    }
+
     .rocket {
-    width: 35rem;
-    height: 40rem;
-    z-index: 1;
-    position: fixed;
-    left:20%;
-}
+        width: 35rem;
+        height: 40rem;
+        z-index: 1;
+        position: fixed;
+        left: 20%;
+    }
+
     .sat {
-    width: 80vw;
-    height: 80vw;
-    z-index: 1;
-    position: fixed;
-}
+        width: 80vw;
+        height: 80vw;
+        z-index: 1;
+        position: fixed;
+    }
 
     #team-container {
-    display: none;
-}
+        display: none;
+    }
 }
 
 .Name {
@@ -355,6 +376,7 @@ section:nth-child(2n + 1) {
 .card-text {
     font-size: larger;
 }
+
 /***************************************************---Eboard---***********************************************/
 
 .marg-r-30 {
@@ -429,9 +451,11 @@ section:nth-child(2n + 1) {
     width: 50vw;
     height: 40vw;
 }
-#gallery-container{
-    width:60%;
+
+#gallery-container {
+    width: 60%;
 }
+
 /***************************************************---DASHBOARD---***********************************************/
 
 #dashboard-container {
