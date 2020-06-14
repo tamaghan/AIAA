@@ -1,13 +1,13 @@
 
 
 function show_meeting() {
-    var meet = document.getElementById('meetings');
-    var event = document.getElementById('events');
+    var meet = document.getElementById('meetings-desk');
+    var event = document.getElementById('events-desk');
     meet.style.display = "flex";
     event.style.display = "none";
 }function show_event() {
-    var meet = document.getElementById('meetings');
-    var event = document.getElementById('events');
+    var meet = document.getElementById('meetings-desk');
+    var event = document.getElementById('events-desk');
     meet.style.display = "none";
     event.style.display = "flex";
 }

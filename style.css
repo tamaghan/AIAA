@@ -255,11 +255,7 @@ section:nth-child(2n + 1) {
     #dashboard-container-mobile{
         display: none;
     }
-    #meetings {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-}
+
 }
 
 /*PHONE*/
@@ -419,9 +415,10 @@ section:nth-child(2n + 1) {
     #dashboard-container-mobile{
         width: 90%;
         text-align: center;
+        height: 40rem;
     }
     #meetings {
-    height: 100%;
+    /*height: 100%;*/
 }
 }
 
@@ -587,13 +584,24 @@ section:nth-child(2n + 1) {
 #dash-body {
     /*background-color: #cccccc;*/
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 
 
 #events {
     display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    display: none;
+}
+#meetings-desk{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+#events-desk{
+     display: flex;
     justify-content: space-evenly;
     height: 100%;
     display: none;
@@ -621,6 +629,10 @@ section:nth-child(2n + 1) {
     border: none;
     box-shadow: 1px 1px 5px 2px #bfbaba;
 }
+.dash-card-mobile {
+    border: none;
+    box-shadow: 1px 1px 5px 2px #bfbaba;
+}
 
 .dbf {
     background-image: linear-gradient(50deg, #8fbe5d 0%, #6eaf26 74%);
@@ -632,6 +644,9 @@ section:nth-child(2n + 1) {
 
 .club {
     background-image: linear-gradient(50deg, #622774 0%, #c53364 74%);
+}
+.club-mobile {
+    background-image: linear-gradient(50deg, #000000 0%, #4c2a2a 74%);
 }
 
 .column {
