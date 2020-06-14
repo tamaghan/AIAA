@@ -92,6 +92,11 @@ section:nth-child(2n + 1) {
 
     div.name-foot {
         font-size: 3vw;
+          color: white;
+    z-index: 2;
+    letter-spacing: 1rem;
+    line-height: 79%;
+    margin-top: 25px;
     }
 
     div.head-name {
@@ -206,6 +211,7 @@ section:nth-child(2n + 1) {
 @media screen and (max-width: 600px) {
     .nav-mobile {
         display: block;
+        width: 100%;
     }
 
     #navv {
@@ -221,7 +227,12 @@ section:nth-child(2n + 1) {
     }
 
     div.name-foot {
-        font-size: 3vw;
+        font-size: 4vw;
+        color: white;
+        z-index: 2;
+        letter-spacing: 1rem;
+        line-height: 120%;
+        margin-top: 25px;
     }
 
     div.head-name {
@@ -252,9 +263,9 @@ section:nth-child(2n + 1) {
     }
 
     .head-mobile {
-        height: 60rem;
-        padding-top: 120px;
-        background-image: linear-gradient(50deg, rgb(87, 202, 133) 0%, rgb(24, 78, 104) 74%);
+        height: 1830px;
+        display: grid;
+        padding-top: 100px;
     }
 
     .stars {
@@ -267,7 +278,7 @@ section:nth-child(2n + 1) {
     .rocket {
         width: 35rem;
         height: 40rem;
-        z-index: 1;
+        z-index: -1;
         position: fixed;
         left: 20%;
     }
@@ -277,6 +288,7 @@ section:nth-child(2n + 1) {
         height: 80vw;
         z-index: 1;
         position: fixed;
+        top: 5%;
     }
 
     #team-container {
@@ -306,14 +318,7 @@ section:nth-child(2n + 1) {
     line-height: 79%;
 }
 
-.name-foot {
-    /*background-color: #f5884e;*/
-    color: white;
-    z-index: 2;
-    letter-spacing: 1rem;
-    line-height: 79%;
-    margin-top: 25px;
-}
+
 
 .teams {
     letter-spacing: 0.5rem;

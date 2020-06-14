@@ -13,10 +13,10 @@
 </head>
 
 <body id=”skrollr-body” >
-<div class="fixed-top nav-mobile" data-0="opacity:1; background-color: rgba(7, 64, 73, 0);"
+<div class="fixed-top nav-mobile" >
+    <div  data-0="opacity:1; background-color: rgba(7, 64, 73, 0);"
      data-500=" opacity:0; background-color: rgba(0, 0, 0, 0);"
-     data-1800="background-color: rgba(0, 0, 0 ,1);" data-1900="opacity:1; background-color: rgba(7, 64, 73, 1);">
-    <div style="background-color:gray;" class="collapse" id="navbarToggleExternalContent">
+     data-1800="background-color: rgba(0, 0, 0 ,1);" data-1900="opacity:1; background-color: rgba(7, 64, 73, 1);" class="collapse" id="navbarToggleExternalContent">
         <ul class="nav justify-content-center ">
             <li class="nav-item">
                 <a class="nav-link white" href="#">Home</a>
@@ -35,7 +35,7 @@
             </li>
         </ul>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
                 aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -64,9 +64,14 @@
         </li>
     </ul>
 </nav>
-<header class="head-mobile">
-
+<header class="head-mobile" data-0="background-image: linear-gradient(50deg, rgb(87,202,133) 0%, rgb(24,78,104)  74%);"
+        data-500=" background-image: linear-gradient(50deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 74%);">
+    <img src="images/dots.PNG" class="stars content" data-0="top:0%;display:block; " data-400="top:-20%; opacity:1; "
+         data-700="  opacity:0; display:none;">
+    <img src="images/sat.png" class="sat content" data-0="left:0%;display:block; " data-400="left:-100%; display:none;">
      <div class="text-center head-name ">
+          <img src="images/rocket.png" class="rocket content" data-0="display:block; top: 50%"
+         data-300="top:-100%; display:none;">
         <div class="name-head">
             American Institute of Aeronautics and Astronautics
         </div>
@@ -416,8 +421,7 @@
             </h3>
             <h3>
                 <i class="far fa-envelope"></i>
-                <span><a style="text-decoration: none; color: white; font-weight: lighter" target="_blank"
-
+                <span><a style="text-decoration: none; color: white; font-weight: lighter; font-size: 2vw" target="_blank"
                          href="mailto:BUFFALOAIAA@gmail.com">BUFFALOAIAA@gmail.com</a></span>
             </h3>
         </div>
@@ -485,8 +489,12 @@
 <script src="aos.js"></script>
 <script src="js/skrollr.js"></script>
 <script>
-    skrollr.init();
-    // skrollr.init([options]);
+    skrollr.init({
+            mobileCheck: function() {
+                //hack - forces mobile version to be off
+                return false;
+            }
+        });
     AOS.init();
 </script>
 </body>

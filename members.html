@@ -14,13 +14,13 @@
 
 <body id="skrollr-body">
 
-
 <section>
     <h1 class="section-heading yellow-grad">
         Members
     </h1>
 </section>
-<section style="height: 5000px">
+<section style="height: 500px">
+     <img src="images/sat.png" class="sat content" data-0="left:0%;display:block; " data-400="left:-100%; display:none;">
     efvevef
 </section>
 <section>
@@ -32,8 +32,8 @@
 <section>
     efvevef
 </section>
-<section>
-    efvevef
+<section style="background-color: #6eaf26">
+   HERE
 </section>
 <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -45,10 +45,15 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-<script src="aos.js"></script>
+<script  src="aos.js"></script>
 <script src="js/skrollr.js"></script>
 <script>
-    var s = skrollr.init();
+    skrollr.init({
+            mobileCheck: function() {
+                //hack - forces mobile version to be off
+                return false;
+            }
+        });
     AOS.init();
 </script>
 </body>
