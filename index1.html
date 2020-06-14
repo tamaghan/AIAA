@@ -586,6 +586,53 @@
     <h1 class="section-heading ">
         Contact
     </h1>
+     <div id="contact-container-mobile">
+        <div id="contact-form-container">
+            <h1> Reach us with your thoughts!</h1>
+            <form id="contact-form" action="https://postmail.invotes.com/send"
+                  method="post" id="email_form">
+                <input id="input-name" type="text" name="subject" placeholder="Your Email and Name"/>
+                <textarea id="input-message" name="text"
+                          placeholder="Message and Team you are interest in ! "></textarea>
+                <input type="hidden" name="access_token" value="99wg30yz9zwhuhfbcu9ocxtv"/>
+                <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0"/>
+                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1"/>
+                <button id="submit_form" value="Send" class="sub-btn" type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+        <div id="my-details-container">
+            <h1>
+                AIAA at UB
+            </h1>
+            <h3>
+                <a target="_blank" class="btn ub-link" href="https://buffalo.campuslabs.com/engage/organization/aiaa"
+                   role="button"> UB-LINKED </a>
+                <!--                put both team captain email-->
+                <a target="_blank" class="btn ub-link" href="mailto:BUFFALOAIAA@gmail.com" role="button"> Micro-G </a>
+                <a target="_blank" class="btn ub-link" href="mailto:BUFFALOAIAA@gmail.com" role="button"> DBF </a>
+            </h3>
+            <h3 style="margin: 15px 0 10px 0;">
+                <i class="fas fa-map-marker-alt"></i>
+                <a style="text-decoration: none; color: white; font-weight: lighter" target="_blank"
+                   href="https://www.google.com/maps/place/Furnas+Hall/@43.0018494,-78.7872948,19.48z/data=!4m8!1m2!2m1!1sfurnace+hall!3m4!1s0x0:0xc4ba8b1953b536d4!8m2!3d43.0019951!4d-78.7874007">Furnas
+                    1025</a>
+            </h3>
+            <h3 style="padding-bottom: 10px">
+                <i class="far fa-envelope"></i>
+                <span><a style="text-decoration: none; color: white; font-weight: lighter; font-size: 4vw"
+                         target="_blank"
+                         href="mailto:BUFFALOAIAA@gmail.com">BUFFALOAIAA@gmail.com</a></span>
+            </h3>
+            <a target="_blank" href="mailto:BUFFALOAIAA@gmail.com" class="fas fa-envelope social-icons"></a>
+            <a style="margin: 0 40px 0 40px" target="_blank" href="https://www.facebook.com/aiaaub/"
+               class="fab fa-facebook social-icons"></a>
+            <a target="_blank"
+               href="https://calendar.google.com/calendar/embed?src=buffalo.edu_3amro66j864hflfeogjeke0q2c%40group.calendar.google.com&ctz=America/New_York"
+               class="far fa-calendar-alt social-icons"></a>
+        </div>
+    </div>
+    <hr >
+
     <div id="contact-container">
         <div id="contact-form-container">
             <h1> Reach us with your thoughts!</h1>
@@ -619,10 +666,47 @@
             </h3>
             <h3>
                 <i class="far fa-envelope"></i>
-                <span><a style="text-decoration: none; color: white; font-weight: lighter; font-size: 2vw"
+                <span><a style="text-decoration: none; color: white; font-weight: lighter; font-size: 1.5vw"
                          target="_blank"
                          href="mailto:BUFFALOAIAA@gmail.com">BUFFALOAIAA@gmail.com</a></span>
             </h3>
+        </div>
+    </div>
+    <div id="footer-mobile">
+        <div style="color: white" id="left-foot">
+            Copyright Tamaghan Maurya © 2020
+        </div>
+        <div id="right-foot">
+            <button style="color: white" type="button" class="btn " data-toggle="modal" data-target="#exampleModal">
+                Made with [Click me]
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 style="color: black" class="modal-title" id="exampleModalLabel"> Website
+                                Architecture </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div style="color: black" class="modal-body">
+                            This Website was created with pure CSS,HTML and Javascript. It also uses some open libraries
+                            from Github for specific features under proper MIT license.
+                            <br> Bootstrap
+                            <br> FontAwesome
+                            <br> AOS (Animate on Scroll)
+                            <br> Animate
+                            <br> Skrollr
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <div id="footer">
@@ -638,7 +722,6 @@
                class="far fa-calendar-alt social-icons"></a>
         </div>
         <div id="right-foot">
-
             <button style="color: white" type="button" class="btn " data-toggle="modal" data-target="#exampleModal">
                 Made with [Click me]
             </button>

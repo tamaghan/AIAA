@@ -255,6 +255,38 @@ section:nth-child(2n + 1) {
     #dashboard-container-mobile{
         display: none;
     }
+ #footer-mobile{
+        display: none;
+   }
+   #footer {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+   #contact-container {
+    display: flex;
+    justify-content: center;
+    /*background-color: #F54EA2;*/
+    width: 90%;
+    margin-bottom: 40px;
+    z-index: 2;
+}
+   #contact-container-mobile{
+       display: none;
+   }
+   #contact-form-container {
+    width: 50%;
+    text-align: center;
+    /*background-color: #fbb040;*/
+}
+   #my-details-container {
+    width: 35%;
+    margin-left: 6%;
+    /*background-color: #65799b;*/
+    z-index: 2;
+}
 
 }
 
@@ -417,9 +449,29 @@ section:nth-child(2n + 1) {
         text-align: center;
         height: 40rem;
     }
-    #meetings {
-    /*height: 100%;*/
+    #footer{
+        display: none;
+    }
+      #contact-container {
+    display: none;
 }
+   #contact-container-mobile{
+       text-align: center;
+   }
+   #contact-form-container {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+   #my-details-container {
+       padding-top: 50px;
+    width: 100%;
+   margin: 0 auto;
+       text-align: center;
+    z-index: 2;
+       padding-bottom: 20px;
+}
+
 }
 
 .Name {
@@ -688,35 +740,12 @@ section:nth-child(2n + 1) {
 /*    !*margin-left: 20%;*!*/
 /*}*/
 
-#contact-container {
-    display: flex;
-    justify-content: center;
-    /*background-color: #F54EA2;*/
-    width: 90%;
-    margin-bottom: 40px;
-    z-index: 2;
-}
 
-#contact-form-container {
-    width: 50%;
-    text-align: center;
-    /*background-color: #fbb040;*/
-}
 
-#my-details-container {
-    width: 35%;
-    margin-left: 6%;
-    /*background-color: #65799b;*/
-    z-index: 2;
-}
 
-#footer {
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    width: 100%;
-    color: white;
-}
+
+
+
 
 .social-icons {
     text-decoration: none;
