@@ -77,7 +77,7 @@ section:nth-child(2n + 1) {
 
     #navv {
         padding: 10px;
-        z-index: 5;
+        z-index: 50;
     }
 
     div.name-head {
@@ -344,6 +344,13 @@ section:nth-child(2n + 1) {
         width: 20vw;
         height: 20vw;
     }
+    #dashboard-dbf{
+        display: none;
+    }
+    #captain-pic{
+    width: 20vw ;
+    height: 20vw;
+}
 }
 
 /*PHONE*/
@@ -355,6 +362,7 @@ section:nth-child(2n + 1) {
 
     #navv {
         display: none;
+        z-index: 40;
     }
 
     div.Name {
@@ -581,8 +589,20 @@ section:nth-child(2n + 1) {
      #dbf-logo{
         padding-top: 20px;
     }
+#captain-pic{
+    width: 50vw ;
+    height: 50vw;
 }
 
+}
+#captain-container{
+    text-align: center;
+    width: 80%;
+}
+
+#captain-container img{
+    border-radius: 50%;
+}
 .Name {
     /*background-color: #acdbdb;*/
     letter-spacing: 0.5rem;
@@ -947,6 +967,9 @@ textarea {
 
 /***************************************************---DBF---***********************************************/
 
+.carousel-caption {
+    z-index: 0;
+}
 .transform {
     width: 70%;
     /*left:50%;*/
