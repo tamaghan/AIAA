@@ -297,6 +297,53 @@ section:nth-child(2n + 1) {
         z-index: 2;
     }
 
+/*------------DBF############DBF%%%%%%%%%%DBF-----------------------*/
+    #dbf-head {
+    height: 2600px;
+    margin-top: -70px;
+}
+    #dbf-head-mobile{
+        display: none;
+    }
+    .buildings {
+    width: 110%;
+    height: 700px;
+    z-index: 2;
+    position: fixed;
+}
+    .moon {
+    width: 20rem;
+    height: 20rem;
+    z-index: 1;
+    left: 3%;
+    position: fixed;
+}
+    .airplane {
+    width: 20rem;
+    height: 10rem;
+    z-index: 2;
+    position: fixed;
+}
+    .sun {
+    width: 20rem;
+    height: 20rem;
+    z-index: 1;
+    left: 70%;
+    position: fixed;
+}
+    .cloud {
+    width: 500px;
+    height: 250px;
+    z-index: 0;
+    top: 15%;
+    position: fixed;
+    /*background-color: #97ebf4;*/
+
+}
+    #dbf-logo{
+        width: 20vw;
+        height: 20vw;
+    }
 }
 
 /*PHONE*/
@@ -487,7 +534,53 @@ section:nth-child(2n + 1) {
         z-index: 2;
         padding-bottom: 20px;
     }
+    /*------------DBF############DBF%%%%%%%%%%DBF-----------------------*/
+    #dbf-head {
+   display: none;
+}
+    #dbf-head-mobile{
+    height: 2600px;
+    }
+    .buildings {
 
+    width: 240%;
+    height: 600px;
+    z-index: 1;
+
+    position: fixed;
+}
+    .moon {
+    width: 10rem;
+    height: 10rem;
+    z-index: 0;
+    left: -10%;
+    position: fixed;
+}
+    .airplane {
+        top:35%;
+        left:30%;
+    width: 10rem;
+    height: 5rem;
+    z-index: 2;
+    position: fixed;
+}
+    .sun {
+    width: 15rem;
+    height: 15rem;
+    z-index: 0;
+    left: 70%;
+    position: fixed;
+}
+    .cloud {
+    width: 500px;
+    height: 250px;
+    z-index: 0;
+    top: 25%;
+    position: fixed;
+}
+     #dbf-logo{
+        padding-top: 20px;
+    }
 }
 
 .Name {
@@ -864,10 +957,7 @@ textarea {
 . transform-origin(50 %, 50 %);
 }
 
-#dbf-head {
-    height: 2600px;
-    margin-top: -70px;
-}
+
 
 #easing_wrapper {
     width: 100%;
@@ -880,22 +970,9 @@ textarea {
     z-index: 0;
 }
 
-.airplane {
-    width: 20rem;
-    height: 10rem;
-    z-index: 2;
-    position: fixed;
-}
 
-.cloud {
-    width: 500px;
-    height: 250px;
-    z-index: 0;
-    top: 15%;
-    position: fixed;
-    /*background-color: #97ebf4;*/
 
-}
+
 
 .cloud2 {
     width: 1000px;
@@ -929,28 +1006,11 @@ textarea {
     position: fixed;
 }
 
-.buildings {
-    width: 110%;
-    height: 700px;
-    z-index: 2;
-    position: fixed;
-}
 
-.moon {
-    width: 20rem;
-    height: 20rem;
-    z-index: 1;
-    left: 3%;
-    position: fixed;
-}
 
-.sun {
-    width: 20rem;
-    height: 20rem;
-    z-index: 1;
-    left: 70%;
-    position: fixed;
-}
+
+
+
 
 .initials {
     /*background-image: linear-gradient(50deg, rgb(135, 51, 160) 0%, rgb(197, 51, 100) 74%);*/
