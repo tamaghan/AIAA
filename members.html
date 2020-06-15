@@ -13,14 +13,70 @@
 </head>
 
 <body id="skrollr-body">
+<div class="fixed-top nav-mobile">
+    <div data-0="opacity:1; background-color: rgba(7, 64, 73, 0);"
+         data-500=" opacity:0; background-color: rgba(0, 0, 0, 0);"
+         data-1300="background-color: rgba(0, 0, 0 ,1);" data-1500="opacity:1; background-color: rgba(7, 64, 73, 1);"
+         class="collapse" id="navbarToggleExternalContent">
+        <ul class="nav justify-content-center ">
+            <li class="nav-item">
+                <a class="nav-link white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="dbf.html">DBF</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="microg.html">Micro-G</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="members.html">Members</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="index.html#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-dark ">
+        <button class="navbar-toggler" data-0="opacity:1; background: hsla(200, 100%, 20%, 0);" data-500="opacity:0;"
+                data-1700="opacity:0; background: hsla(200, 100%, 20%, 1);" data-1800="opacity:1"
+                data-end="background:hsls(920, 100%, 20%,1);"
+                type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+    </nav>
+</div>
+<nav id="navv" data-0="opacity:1; background-color: rgba(66, 179, 196, 0);"
+     data-500=" opacity:0; background-color: rgba(255, 255, 255, 0);"
+     data-2400="background-color: rgba(0, 0, 0 ,1);" data-2600="opacity:1; background-color: rgba(7, 64, 73, 1);"
+     class="sticky-top">
+    <ul class="nav justify-content-center ">
+        <li class="nav-item">
+            <a class="nav-link white" href="index1.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link white" href="#head">DBF</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link white" href="microg.html">Micro-G</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link white" href="members.html">Members</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link white" href="index.html#contact">Contact</a>
+        </li>
+    </ul>
+</nav>
 
 <section>
     <h1 class="section-heading yellow-grad">
         Members
+        **In progress**
     </h1>
 </section>
 <section style="height: 500px">
-     <img src="images/sat.png" class="sat content" data-0="left:0%;display:block; " data-400="left:-100%; display:none;">
     efvevef
 </section>
 <section>
@@ -50,7 +106,6 @@
 <script>
     skrollr.init({
             mobileCheck: function() {
-                //hack - forces mobile version to be off
                 return false;
             }
         });

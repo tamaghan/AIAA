@@ -31,13 +31,18 @@
             <li class="nav-item">
                 <a class="nav-link white" href="members.html">Members</a>
             </li>
+             <li class="nav-item">
+                <a class="nav-link white" href="Dashboard.html">Dashboard</a>
+            </li>
             <li class="nav-item">
-                <a class="nav-link white" href="#contact">Contact</a>
+                <a class="nav-link white" href="index.html#contact">Contact</a>
             </li>
         </ul>
     </div>
-     <nav class="navbar navbar-dark ">
-        <button class="navbar-toggler" data-0="opacity:1; background: hsla(200, 100%, 20%, 0);" data-500="opacity:0;" data-1700="opacity:0; background: hsla(200, 100%, 20%, 1);" data-1800="opacity:1"  data-end="background:hsls(920, 100%, 20%,1);"
+    <nav class="navbar navbar-dark ">
+        <button class="navbar-toggler" data-0="opacity:1; background: hsla(200, 100%, 20%, 0);" data-500="opacity:0;"
+                data-1700="opacity:0; background: hsla(200, 100%, 20%, 1);" data-1800="opacity:1"
+                data-end="background:hsls(920, 100%, 20%,1);"
                 type="button" data-toggle="collapse"
                 data-target="#navbarToggleExternalContent"
                 aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,20 +67,26 @@
         <li class="nav-item">
             <a class="nav-link white" href="members.html">Members</a>
         </li>
+         <li class="nav-item">
+                <a class="nav-link white" href="index.html#dashboard">Dashboard</a>
+            </li>
         <li class="nav-item">
-            <a class="nav-link white" href="#Contact">Contact</a>
+            <a class="nav-link white" href="index.html#contact">Contact</a>
         </li>
     </ul>
 </nav>
-<header id="dbf-head-mobile" data-0=" background-image: linear-gradient(50deg, rgb(25, 69, 136) 54%, rgb(75, 231, 231) 100%);"
+<header id="dbf-head-mobile"
+        data-0=" background-image: linear-gradient(50deg, rgb(25, 69, 136) 54%, rgb(75, 231, 231) 100%);"
         data-500=" background-image: linear-gradient(50deg, rgb(239, 65, 54) 0%, rgb(251, 176, 64) 74%);">
     <img src="images/airplane.png" class="airplane content"
          data-0="display:block;transform:scale(0) rotate(0deg); "
          data-400="transform:scale(10) rotate(70deg);opacity:1;"
          data-500="transform:scale(20) rotate(100deg); opacity:0; display:none;">
-        <img src="images/buildings.png" class="buildings content" data-0=" left:-30%; top: 25%;display:block;transform:scale(2)  "
-         data-400="transform:scale(1);left:-80%;" data-1700="top:25%" data-2700="top:-105%" data-2850="display:none">
-     <img src="images/sun.png" class="sun content" data-0="display:block; top:100%" data-500="top:0%" data-1200="top:0%"
+    <img src="images/buildings.png" class="buildings content"
+         data-0=" left:-30%; top: 25%;display:block;transform:scale(2)  "
+         data-400="transform:scale(1);left:-80%;top:34%" data-1700="top:34%" data-2700="top:-105%"
+         data-2850="display:none">
+    <img src="images/sun.png" class="sun content" data-0="display:block; top:100%" data-500="top:0%" data-1200="top:0%"
          data-1500="top:100%" data-1700="display:none">
     <img src="images/moon.png" class="moon content" data-1200="top:100%" data-1500="top:0%" data-1700="top:0%"
          data-2700="top:-100%">
@@ -153,16 +164,17 @@
     </div>
 </section>
 <section id="team">
-     <h1 class="section-heading yellow-grad">
+    <h1 class="section-heading yellow-grad">
         Captian
     </h1>
     <div id="captain-container">
-       <img src="images/we.jpg" id="captain-pic">
+        <img src="images/we.jpg" id="captain-pic">
         <h3 style="padding-top: 20px; color: white"> 2017-2020</h3>
-        <p style="padding-top: 20px; color: white; font-size: larger">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <p style="padding-top: 20px; color: white; font-size: larger">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
     </div>
 </section>
@@ -235,84 +247,19 @@
     </div>
 </section>
 <section id="achiv">
-     <h1 class="section-heading yellow-grad" style="font-size: 2.5rem">
+    <div id="achiv-container-mobile">
+        <h1 class="section-heading yellow-grad" style="font-size: 2.5rem">
         Achievements
     </h1>
-</section>
-<section id="dashboard-dbf">
-    <h1 class="section-heading blue-grad">
-        DashBoard
-    </h1>
-    <div id="dashboard-container-mobile">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-outline-info active">
-                <input onclick="show_meeting_mobile()" type="radio" name="options" id="option1" checked> Meetings
-            </label>
-            <label class="btn btn-outline-danger">
-                <input onclick="show_event_mobile()" type="radio" name="options" id="option3"> Events
-            </label>
-        </div>
-        <div id="dash-body" style="padding-top: 20px">
-            <div id="meetings">
-                <div class="eboard-row" style="margin-top: 0">
-                    <div class="card dash-card-mobile" style="width: 12rem; margin-right: 5px">
-                        <div class="card-body">
-                            <h5 class="card-title">meeting</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">03-05-2020</h6>
-                            <p class="card-text">DAVIS 305 at 5pm</p>
-                        </div>
-                    </div>
-                    <div class="card dash-card-mobile " style="width: 12rem;margin-left: 5px">
-                        <div class="card-body">
-                            <h5 class="card-title">meeting</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">03-05-2020</h6>
-                            <p class="card-text">DAVIS 305 at 5pm</p>
-                        </div>
-                    </div>
-                </div>
-                <!--                to add more-->
-                <div class="eboard-row" style="margin-top: 10px">
-                    <div class="card dash-card-mobile " style="width: 12rem; margin-right: 5px">
-                        <div class="card-body">
-                            <h5 class="card-title">meeting</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">03-05-2020</h6>
-                            <p class="card-text">DAVIS 305 at 5pm</p>
-                        </div>
-                    </div>
-                    <div class="card dash-card-mobile" style="width: 12rem;margin-left: 5px">
-                        <div class="card-body">
-                            <h5 class="card-title">meeting</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">03-05-2020</h6>
-                            <p class="card-text">DAVIS 305 at 5pm</p>
-                        </div>
-                    </div>
-                </div>
-                <!--                to add more-->
-            </div>
-            <div id="events">
-                <div class="eboard-row" style="margin-top: 0">
-                    <div class="card dash-card-mobile" style="width: 18rem; margin-right: 5px">
-                        <div class="card-body">
-                            <h5 class="card-title">event</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">details</p>
-                        </div>
-                    </div>
-                    <div class="card dash-card-mobile" style="width: 18rem; margin-left: 5px">
-                        <div class="card-body">
-                            <h5 class="card-title">event</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">details</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a class="btn members-link " href="index.html#dashboard" role="button">AIAA Dashboard</a>
-        <a class="btn members-link " href="microg.html#dashboard" role="button">Micro-g Dashboard</a>
     </div>
-</section>
+    <div id="achiv-container">
+        <h1 class="section-heading yellow-grad" >
+        Achievements
+    </h1>
+    </div>
 
+
+</section>
 <section id="contact">
     <h1 class="section-heading ">
         Contact

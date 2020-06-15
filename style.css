@@ -297,60 +297,100 @@ section:nth-child(2n + 1) {
         z-index: 2;
     }
 
-/*------------DBF############DBF%%%%%%%%%%DBF-----------------------*/
+    /*------------DBF############DBF%%%%%%%%%%DBF-----------------------*/
     #dbf-head {
-    height: 2600px;
-    margin-top: -70px;
-}
-    #dbf-head-mobile{
+        height: 2600px;
+        margin-top: -70px;
+    }
+
+    #dbf-head-mobile {
         display: none;
     }
-    .buildings {
-    width: 110%;
-    height: 700px;
-    z-index: 2;
-    position: fixed;
-}
-    .moon {
-    width: 20rem;
-    height: 20rem;
-    z-index: 1;
-    left: 3%;
-    position: fixed;
-}
-    .airplane {
-    width: 20rem;
-    height: 10rem;
-    z-index: 2;
-    position: fixed;
-}
-    .sun {
-    width: 20rem;
-    height: 20rem;
-    z-index: 1;
-    left: 70%;
-    position: fixed;
-}
-    .cloud {
-    width: 500px;
-    height: 250px;
-    z-index: 0;
-    top: 15%;
-    position: fixed;
-    /*background-color: #97ebf4;*/
 
-}
-    #dbf-logo{
+    .buildings {
+        width: 110%;
+        height: 700px;
+        z-index: 2;
+        position: fixed;
+    }
+
+    .moon {
+        width: 20rem;
+        height: 20rem;
+        z-index: 1;
+        left: 3%;
+        position: fixed;
+    }
+
+    .airplane {
+        width: 20rem;
+        height: 10rem;
+        z-index: 2;
+        position: fixed;
+    }
+
+    .sun {
+        width: 20rem;
+        height: 20rem;
+        z-index: 1;
+        left: 70%;
+        position: fixed;
+    }
+
+    .cloud {
+        width: 500px;
+        height: 250px;
+        z-index: 0;
+        top: 15%;
+        position: fixed;
+        /*background-color: #97ebf4;*/
+
+    }
+
+    #about-logo {
+        padding-top: 10px;
         width: 20vw;
         height: 20vw;
     }
-    #dashboard-dbf{
+
+    #dashboard-dbf {
         display: none;
     }
-    #captain-pic{
-    width: 20vw ;
-    height: 20vw;
-}
+
+    #captain-pic {
+        width: 20vw;
+        height: 20vw;
+    }
+
+
+    #micro-head-mobile {
+        display: none;
+    }
+
+    #micro-head {
+
+    }
+
+    #micro-team-container {
+        text-align: center;
+        width: 80%;
+    }
+
+    #micro-team-container-mobile {
+        display: none;
+    }
+
+    .micro-team-pic {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    #dashboard-micro {
+        display: none;
+    }
+    #achiv-container-mobile{
+        display: none;
+    }
 }
 
 /*PHONE*/
@@ -511,9 +551,7 @@ section:nth-child(2n + 1) {
     }
 
     #dashboard-container-mobile {
-        width: 90%;
         text-align: center;
-        height: 40rem;
     }
 
     #footer {
@@ -542,67 +580,114 @@ section:nth-child(2n + 1) {
         z-index: 2;
         padding-bottom: 20px;
     }
+
     /*------------DBF############DBF%%%%%%%%%%DBF-----------------------*/
     #dbf-head {
-   display: none;
-}
-    #dbf-head-mobile{
-    height: 2600px;
+        display: none;
     }
+
+    #dbf-head-mobile {
+        height: 2600px;
+    }
+
     .buildings {
 
-    width: 240%;
-    height: 600px;
-    z-index: 1;
+        width: 240%;
+        height: 600px;
+        z-index: 1;
 
-    position: fixed;
-}
-    .moon {
-    width: 10rem;
-    height: 10rem;
-    z-index: 0;
-    left: -10%;
-    position: fixed;
-}
-    .airplane {
-        top:35%;
-        left:30%;
-    width: 10rem;
-    height: 5rem;
-    z-index: 2;
-    position: fixed;
-}
-    .sun {
-    width: 15rem;
-    height: 15rem;
-    z-index: 0;
-    left: 70%;
-    position: fixed;
-}
-    .cloud {
-    width: 500px;
-    height: 250px;
-    z-index: 0;
-    top: 25%;
-    position: fixed;
-}
-     #dbf-logo{
-        padding-top: 20px;
+        position: fixed;
     }
-#captain-pic{
-    width: 50vw ;
-    height: 50vw;
-}
+
+    .moon {
+        width: 10rem;
+        height: 10rem;
+        z-index: 0;
+        left: -10%;
+        position: fixed;
+    }
+
+    .airplane {
+        top: 35%;
+        left: 30%;
+        width: 10rem;
+        height: 5rem;
+        z-index: 2;
+        position: fixed;
+    }
+
+    .sun {
+        width: 15rem;
+        height: 15rem;
+        z-index: 0;
+        left: 70%;
+        position: fixed;
+    }
+
+    .cloud {
+        width: 500px;
+        height: 250px;
+        z-index: 0;
+        top: 25%;
+        position: fixed;
+    }
+
+    #about-logo {
+        padding-top: 20px;
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #captain-pic {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    /*------------MICROG############MICROG%%%%%%%%%%MICROG-----------------------*/
+    .micro-team-pic {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    #micro-head-mobile {
+
+    }
+
+    #micro-head {
+        display: none;
+    }
+
+    #micro-team-container-mobile {
+        text-align: center;
+        width: 80%;
+    }
+
+    #micro-team-container {
+        display: none;
+    }
+    #achiv-container{
+        display: none;
+    }
 
 }
-#captain-container{
+
+#micro-team-container img {
+    border-radius: 50%;
+}
+
+#micro-team-container-mobile img {
+    border-radius: 50%;
+}
+
+#captain-container {
     text-align: center;
     width: 80%;
 }
 
-#captain-container img{
+#captain-container img {
     border-radius: 50%;
 }
+
 .Name {
     /*background-color: #acdbdb;*/
     letter-spacing: 0.5rem;
@@ -747,6 +832,7 @@ section:nth-child(2n + 1) {
 
 /***************************************************---DASHBOARD---***********************************************/
 
+
 .mobile-card {
     width: 30%;
 }
@@ -762,8 +848,8 @@ section:nth-child(2n + 1) {
 }
 
 #dash-body {
-    /*background-color: #cccccc;*/
     width: 100%;
+    padding: 10px;
     /*height: 100%;*/
 }
 
@@ -970,6 +1056,7 @@ textarea {
 .carousel-caption {
     z-index: 0;
 }
+
 .transform {
     width: 70%;
     /*left:50%;*/
@@ -979,7 +1066,6 @@ textarea {
     font-size: 150%;
 . transform-origin(50 %, 50 %);
 }
-
 
 
 #easing_wrapper {
@@ -992,9 +1078,6 @@ textarea {
     width: 100%;
     z-index: 0;
 }
-
-
-
 
 
 .cloud2 {
@@ -1030,11 +1113,6 @@ textarea {
 }
 
 
-
-
-
-
-
 .initials {
     /*background-image: linear-gradient(50deg, rgb(135, 51, 160) 0%, rgb(197, 51, 100) 74%);*/
     background-size: 100%;
@@ -1055,6 +1133,11 @@ textarea {
 #micro--head {
     height: 2600px;
     margin-top: -70px;
+}
+
+.micro-team-flex {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /**************************************************---EXTRAS---***********************************************/
@@ -1108,4 +1191,41 @@ textarea {
 
 .h-80 {
     height: 40rem;
+}
+
+
+#dash-body-dbf{
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+#dash-body-micro{
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+#dash-body-aiaa{
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+#real-dashboard{
+    padding-top: 100px;
+    height: 100%;
+}
+#dbf-events {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    display: none;
+}#micro-events {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    display: none;
+}#aiaa-events {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    display: none;
 }
