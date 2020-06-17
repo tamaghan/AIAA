@@ -119,8 +119,10 @@ function AIAA_eve(data) {
 function go_dark() {
     var back = document.getElementById('real-dashboard');
     var head = document.getElementById('dash-head');
-    var cards = document.querySelectorAll(".dash-card-mobile");
+    var cards_mob = document.querySelectorAll(".dash-card-mobile");
+    var cards = document.querySelectorAll(".dash-card");
     for (let i = 0; i < cards.length; i++) {
+	cards_mob[i].style.boxShadow = 'none';
 	cards[i].style.boxShadow = 'none';
     }
     back.style.backgroundColor = 'rgb(22, 22, 22)';
@@ -130,6 +132,12 @@ function go_dark() {
 function go_light() {
     var back = document.getElementById('real-dashboard');
     var head = document.getElementById('dash-head');
+     var cards_mob = document.querySelectorAll(".dash-card-mobile");
+    var cards = document.querySelectorAll(".dash-card");
+    for (let i = 0; i < cards.length; i++) {
+	cards_mob[i].style.boxShadow = ' 1px 1px 5px 2px #bfbaba';
+	cards[i].style.boxShadow = '1px 1px 5px 2px #bfbaba';
+    }
     back.style.backgroundColor = 'white';
     head.style.backgroundImage = 'linear-gradient(50deg, #65799b 0%, #5e2563 74%)';
 

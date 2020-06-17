@@ -70,7 +70,6 @@
     </ul>
 </nav>
 <div id="real-dashboard">
-
     <h1 class="section-heading blue-grad" id="dash-head" style="margin-bottom: 10px">
         DashBoard
     </h1>
@@ -165,7 +164,10 @@
                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
             </div>
         </div>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <button onclick="go_light()" type="button" class="btn btn-light">Light</button>
+            <button onclick="go_dark()" type="button" class="btn btn-dark">Dark</button>
+        <br >
+        <div class="btn-group btn-group-toggle" data-toggle="buttons" style="padding-top: 15px">
             <label class="btn btn-outline-info  active">
                 <input onclick="show_meeting()" type="radio" name="options" id="option1" checked> Meetings
             </label>
