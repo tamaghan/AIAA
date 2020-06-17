@@ -1,4 +1,3 @@
-
 function successFunc(data) {
       // console.log(data);
       dbf(data);
@@ -8,7 +7,6 @@ function successFunc(data) {
       micro_eve(data);
       AIAA_eve(data);
       progress(data);
-
     }
 Sheetsu.read("https://sheetsu.com/apis/v1.0su/4423c3436def", {}, successFunc);
 function progress(data) {
@@ -19,7 +17,6 @@ function progress(data) {
     bar.width = prog ;
     bar1.width = prog ;
 }
-
 function dbf(data) {
     for (let i = 0; i < data.length; i++) {
           var add = data[i]["DBF"];
@@ -155,7 +152,6 @@ function show_dbf() {
         show_event_dash();
     }
 }
-
 function show_micro() {
     var dbf = document.getElementById('dash-body-dbf');
     var micro = document.getElementById('dash-body-micro');
@@ -168,7 +164,8 @@ function show_micro() {
     } else if(document.getElementById('event').classList.contains('active')){
         show_event_dash();
     }
-}function show_aiaa() {
+}
+function show_aiaa() {
     var dbf = document.getElementById('dash-body-dbf');
     var micro = document.getElementById('dash-body-micro');
     var aiaa = document.getElementById('dash-body-aiaa');
@@ -181,7 +178,6 @@ function show_micro() {
         show_event_dash();
     }
 }
-
 function show_meeting_dash() {
     var dbf = document.getElementById('dash-body-dbf').style.display;
     var micro = document.getElementById('dash-body-micro').style.display;
@@ -224,7 +220,6 @@ function show_event_dash() {
         event1.style.display = "block";
     }
 }
-
 function show_meeting() {
     var meet = document.getElementById('meetings-desk');
     var event = document.getElementById('events-desk');
@@ -237,7 +232,6 @@ function show_event() {
     meet.style.display = "none";
     event.style.display = "flex";
 }
-
 var submitButton = document.getElementById("submit_form");
     var form = document.getElementById("email_form");
     if(form){
