@@ -414,6 +414,22 @@ section:nth-child(2n + 1) {
         left: 60%;
 
     }
+.rover2 {
+        position: fixed;
+        width: 12vw;
+        height: 10vw;
+        z-index: 1;
+        left: 25%;
+
+    }
+    .smoke {
+        position: fixed;
+        width: 12vw;
+        height: 10vw;
+        z-index: 1;
+        left: 43%;
+
+    }
 
     .micro-rocket {
         width: 28vw;
@@ -482,6 +498,12 @@ section:nth-child(2n + 1) {
         font-weight: bold;
 
         font-size: 23vw;
+    }
+    .skip{
+         position: fixed;
+        z-index: 3;
+        left: 90%;
+        top: 10%;
     }
 }
 
