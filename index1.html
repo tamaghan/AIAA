@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--    https://forms.gle/rCfgi74bX97TBaA18-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
     <title> UB AIAA </title>
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
 
-<body id=”skrollr-body”>
+<body>
 <div class="fixed-top nav-mobile">
     <div data-0="opacity:1; background-color: rgba(7, 64, 73, 0);"
          data-500=" opacity:0; background-color: rgba(0, 0, 0, 0);"
@@ -39,10 +40,12 @@
             </li>
         </ul>
     </div>
-<!--    data-1500="opacity:1;background:hsl(200, 100%, 20%);"-->
-<!--                data-end="background:hsl(920, 100%, 20%);" -->
+    <!--    data-1500="opacity:1;background:hsl(200, 100%, 20%);"-->
+    <!--                data-end="background:hsl(920, 100%, 20%);" -->
     <nav class="navbar navbar-dark ">
-        <button class="navbar-toggler" data-0="opacity:1; background: hsla(200, 100%, 20%, 0);" data-500="opacity:0;" data-1700="opacity:0; background: hsla(200, 100%, 20%, 1);" data-1800="opacity:1"  data-end="background:hsls(920, 100%, 20%,1);"
+        <button class="navbar-toggler" data-0="opacity:1; background: hsla(200, 100%, 20%, 0);" data-500="opacity:0;"
+                data-1700="opacity:0; background: hsla(200, 100%, 20%, 1);" data-1800="opacity:1"
+                data-end="background:hsls(920, 100%, 20%,1);"
                 type="button" data-toggle="collapse"
                 data-target="#navbarToggleExternalContent"
                 aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,9 +70,9 @@
         <li class="nav-item">
             <a class="nav-link white" href="members.html">Members</a>
         </li>
-         <li class="nav-item">
-                <a class="nav-link white" href="#dashboard">Dashboard</a>
-            </li>
+        <li class="nav-item">
+            <a class="nav-link white" href="Dashboard.html">Dashboard</a>
+        </li>
         <li class="nav-item">
             <a class="nav-link white" href="#contact">Contact</a>
         </li>
@@ -148,7 +151,6 @@
         <p class="team-info inline" data-800="opacity:0;" data-900="opacity:1;">ravity</p>
     </div>
 </header>
-
 <section id="aiaa-chapter">
 
     <h1 class="section-heading blue-grad">
@@ -238,7 +240,7 @@
 
     </div>
 </section>
-<section>
+<section id="eboard">
     <h1 class="section-heading blue-grad">
         E-Board
     </h1>
@@ -283,7 +285,7 @@
                 </div>
             </a>
         </div>
-        <div class="eboard-row" style="justify-content: center">
+        <div class="eboard-row" style="justify-content: center; display: flex">
             <a style="padding: 0" class="btn " role="button">
                 <div class="card marg-r-30 br-6" data-aos="flip-up">
                     <img src="images/pic.jpg" class="card-img-top" alt="...">
@@ -355,7 +357,6 @@
 
     <a class="btn members-link " href="members.html" role="button">All Members</a>
 </section>
-
 <section id="gallery">
     <h1 class="section-heading yellow-grad">
         Gallery
@@ -424,103 +425,6 @@
         </div>
     </div>
 </section>
-<section id="dashboard">
-    <h1 class="section-heading blue-grad">
-        DashBoard
-    </h1>
-    <div id="dashboard-container-mobile">
-        <a class="btn members-link " href="Dashboard.html" role="button">Dashboard</a>
-    </div>
-    <div id="dashboard-container" class="text-center">
-        <div style="margin-bottom: 20px" class="progress">
-            <div id="prog" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
-                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 44%">Summer 2020
-            </div>
-        </div>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-outline-info  active">
-                <input onclick="show_meeting()" type="radio" name="options" id="option1" checked> Meetings
-            </label>
-            <label class="btn btn-outline-danger ">
-                <input onclick="show_event()" type="radio" name="options" id="option3"> Events
-            </label>
-        </div>
-        <div id="dash-back">
-            <div id="dash-body">
-                <div id="meetings-desk">
-                    <div class="column">
-                        <center>
-                            <h3 class="dash-teams">DBF</h3>
-                        </center>
-                        <div class="card dash-card dbf text-center dash-cards">
-                            <div class="card-body dash-card-body">
-                                <h5 class="card-title">27th august</h5>
-                                <p class="card-text white"><small class=" white">5pm at Davis Hall 208</small></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <center>
-                            <h3 class="dash-teams">Micro-g</h3>
-                        </center>
-                        <div class="card dash-card micro text-center dash-cards">
-                            <div class="card-body dash-card-body">
-                                <h5 class="card-title">12th November</h5>
-                                <p class="card-text white"><small class=" white">2pm at knox Hall 208</small></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <center>
-                            <h3 class="dash-teams">AIAA</h3>
-                        </center>
-                        <div class="card dash-card club text-center dash-cards">
-                            <div class="card-body dash-card-body">
-                                <h5 class="card-title">16th December</h5>
-                                <p class="card-text white"><small class=" white">5pm at Davis Hall 208</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="events-desk">
-                    <div class="column">
-                        <center>
-                            <h3 class="dash-teams">DBF</h3>
-                        </center>
-                        <div class="card dash-card dbf text-center dash-cards">
-                            <div class="card-body dash-card-body">
-                                <h5 class="card-title">EVENT</h5>
-                                <p class="card-text white"><small class=" white">5pm at Davis Hall 208</small></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <center>
-                            <h3 class="dash-teams">Micro-g</h3>
-                        </center>
-                        <div class="card dash-card micro text-center dash-cards">
-                            <div class="card-body dash-card-body">
-                                <h5 class="card-title">Event</h5>
-                                <p class="card-text white"><small class=" white">5pm at Davis Hall 208</small></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <center>
-                            <h3 class="dash-teams">AIAA</h3>
-                        </center>
-                        <div class="card dash-card club text-center dash-cards">
-                            <div class="card-body dash-card-body">
-                                <h5 class="card-title">Event</h5>
-                                <p class="card-text white"><small class=" white">5pm at Davis Hall 208</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <section id="contact">
     <h1 class="section-heading ">
         Contact
@@ -571,7 +475,6 @@
         </div>
     </div>
     <hr>
-
     <div id="contact-container">
         <div id="contact-form-container">
             <h1> Reach us with your thoughts!</h1>
@@ -661,10 +564,10 @@
                class="far fa-calendar-alt social-icons"></a>
         </div>
         <div id="right-foot">
-            <button style="color: white" type="button" class="btn " data-toggle="modal" data-target="#exampleModal">
+            <button style="color: white" type="button" class="btn " data-toggle="modal" data-target="#exampleModal1">
                 Made with [Click me]
             </button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -690,12 +593,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
-<!-- Compressed JavaScript -->
 <script src="js/skrollr.js"></script>
 <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/b6d5ddd578.js"></script>
