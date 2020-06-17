@@ -414,7 +414,8 @@ section:nth-child(2n + 1) {
         left: 60%;
 
     }
-.rover2 {
+
+    .rover2 {
         position: fixed;
         width: 12vw;
         height: 10vw;
@@ -422,6 +423,7 @@ section:nth-child(2n + 1) {
         left: 25%;
 
     }
+
     .smoke {
         position: fixed;
         width: 12vw;
@@ -499,8 +501,9 @@ section:nth-child(2n + 1) {
 
         font-size: 23vw;
     }
-    .skip{
-         position: fixed;
+
+    .skip {
+        position: fixed;
         z-index: 3;
         left: 90%;
         top: 10%;
@@ -761,13 +764,107 @@ section:nth-child(2n + 1) {
     }
 
     #micro-head-mobile {
-
+        height: 3300px;
     }
 
     #micro-head {
         display: none;
     }
 
+    .earth {
+        width: 95vw;
+        height: 100vw;
+        z-index: 3;
+        top: 30%;
+        position: fixed;
+    }
+
+    .micro-rocket {
+        width: 68vw;
+        height: 70vw;
+        z-index: 2;
+        position: fixed;
+        top: 35%;
+    }
+
+    .astro {
+        z-index: 1;
+        position: fixed;
+        top: 20%;
+        width: 20vw;
+        height: 25vw;
+    }
+
+    .micro-sat {
+        z-index: 1;
+        position: fixed;
+        top: 60%;
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .micro-stars {
+        width: 180%;
+        height: 1000px;
+        z-index: 0;
+        top: 10%;
+        transform: scale(1.6);
+        position: fixed;
+    }
+
+    .mars {
+        position: fixed;
+        width: 150vw;
+        height: 130vw;
+        z-index: 1;
+        left: -25%;
+    }
+
+    .rover {
+        position: fixed;
+        width: 15vw;
+        height: 13vw;
+        z-index: 1;
+        left: 67%;
+    }
+
+    .rover2 {
+        position: fixed;
+        width: 15vw;
+        height: 13vw;
+        z-index: 1;
+        left: 15%;
+    }
+
+    .micro-heading {
+        position: fixed;
+        width: 100%;
+        z-index: 0;
+        left: 10%;
+    }
+
+    .micro-text {
+
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        font-size: 17vw;
+        letter-spacing: 1rem;
+    }
+    .micro-foot {
+        color: white;
+        font-weight: bold;
+        font-size: 40vw;
+    }
+
+    .skip {
+        position: fixed;
+        z-index: 3;
+        top: 10%;
+        left: 70%;
+    }
     #micro-team-container-mobile {
         text-align: center;
         width: 80%;
