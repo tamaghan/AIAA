@@ -393,9 +393,9 @@ section:nth-child(2n + 1) {
     }
 
     .earth {
-        width: 60vw;
-        height: 60vw;
-        z-index: 3;
+        width: 50rem;
+        height: 50rem;
+        z-index: 4;
         position: fixed;
     }
 
@@ -450,14 +450,6 @@ section:nth-child(2n + 1) {
         position: fixed;
     }
 
-    .flame {
-
-        width: 10vw;
-        z-index: 2;
-        position: fixed;
-        top: 42%;
-        height: 10vw;
-    }
 
     .astro {
         z-index: 1;
@@ -772,10 +764,10 @@ section:nth-child(2n + 1) {
     }
 
     .earth {
-        width: 95vw;
+        width: 100vw;
         height: 100vw;
-        z-index: 3;
-        top: 30%;
+        z-index: 4;
+        top: 40%;
         position: fixed;
     }
 
@@ -798,7 +790,7 @@ section:nth-child(2n + 1) {
     .micro-sat {
         z-index: 1;
         position: fixed;
-        top: 60%;
+        top: 70%;
         width: 30vw;
         height: 30vw;
     }
@@ -828,6 +820,7 @@ section:nth-child(2n + 1) {
         left: 67%;
     }
 
+
     .rover2 {
         position: fixed;
         width: 15vw;
@@ -853,6 +846,7 @@ section:nth-child(2n + 1) {
         font-size: 17vw;
         letter-spacing: 1rem;
     }
+
     .micro-foot {
         color: white;
         font-weight: bold;
@@ -865,6 +859,7 @@ section:nth-child(2n + 1) {
         top: 10%;
         left: 70%;
     }
+
     #micro-team-container-mobile {
         text-align: center;
         width: 80%;
