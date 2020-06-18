@@ -61,7 +61,12 @@ section:nth-child(2n) {
 section:nth-child(2n + 1) {
     background-color: white;
 }
-
+.skippy{
+  display: block;
+  height: 115px;
+  margin-top: -115px;
+  visibility: hidden;
+}
 .nav-link {
     font-size: 20px;
 }
@@ -406,33 +411,14 @@ section:nth-child(2n + 1) {
         z-index: 1;
     }
 
+
     .rover {
         position: fixed;
         width: 12vw;
         height: 10vw;
         z-index: 1;
         left: 60%;
-
     }
-
-    .rover2 {
-        position: fixed;
-        width: 12vw;
-        height: 10vw;
-        z-index: 1;
-        left: 25%;
-
-    }
-
-    .smoke {
-        position: fixed;
-        width: 12vw;
-        height: 10vw;
-        z-index: 1;
-        left: 43%;
-
-    }
-
     .micro-rocket {
         width: 28vw;
         height: 30vw;
@@ -819,16 +805,6 @@ section:nth-child(2n + 1) {
         z-index: 1;
         left: 67%;
     }
-
-
-    .rover2 {
-        position: fixed;
-        width: 15vw;
-        height: 13vw;
-        z-index: 1;
-        left: 15%;
-    }
-
     .micro-heading {
         position: fixed;
         width: 100%;
@@ -856,7 +832,7 @@ section:nth-child(2n + 1) {
     .skip {
         position: fixed;
         z-index: 3;
-        top: 10%;
+        top: 12.5%;
         left: 70%;
     }
 
@@ -880,6 +856,10 @@ section:nth-child(2n + 1) {
 
 }
 
+ .mars-container {
+        position: fixed;
+        z-index: 1;
+    }
 #micro-team-container img {
     border-radius: 50%;
 }
