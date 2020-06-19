@@ -8,7 +8,7 @@ function init() {
     })
 }
 
-function dashboard_container(data, tabletop) {
+function dashboard_container(data) {
     // console.log(data);
     dbf(data);
     micro(data);
