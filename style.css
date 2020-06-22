@@ -509,9 +509,11 @@ section:nth-child(2n + 1) {
         left: 0;
         right: 0;
         margin: auto;
+        z-index: 1;
     }
 
     .members-text {
+        z-index: 2;
         background-size: 100%;
         background-repeat: repeat;
         -webkit-background-clip: text;
@@ -523,8 +525,9 @@ section:nth-child(2n + 1) {
     }
 
     .members-heading {
+        z-index: 2;
         position: fixed;
-        z-index: 0;
+
         top: 50%;
         left: 50%;
     }
@@ -896,7 +899,8 @@ section:nth-child(2n + 1) {
         padding-top: 100px;
         height: 100%;
     }
-     #members-head {
+
+    #members-head {
         display: none;
     }
 
@@ -911,12 +915,14 @@ section:nth-child(2n + 1) {
         position: fixed;
         top: 0;
         bottom: 0;
+        z-index: 1;
         left: 0;
         right: 0;
         margin: auto;
     }
 
     .members-text {
+        z-index: 2;
         background-size: 100%;
         background-repeat: repeat;
         -webkit-background-clip: text;
@@ -928,8 +934,8 @@ section:nth-child(2n + 1) {
     }
 
     .members-heading {
+        z-index: 2;
         position: fixed;
-        z-index: 0;
         top: 50%;
         left: 50%;
     }
@@ -1392,6 +1398,53 @@ textarea {
     justify-content: space-evenly;
 }
 
+
+/**************************************************---members---***********************************************/
+.alumni-container {
+    overflow: auto;
+    display: flex;
+    justify-content: space-evenly;
+    white-space: nowrap;
+}
+
+.tg {
+    display: inline-block;
+}
+
+#members-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 90%;
+    height: 40rem;
+ border-style: solid;
+        border-color: white;
+        border-width: 4px;
+        box-shadow: 1px 1px 10px 2px #bfbaba;
+}
+
+#mem-heading {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+#left {
+    overflow: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#right {
+    overflow: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.mem-head {
+    font-size: 4vh;
+    margin-left: 15px;
+}
 
 /**************************************************---EXTRAS---***********************************************/
 

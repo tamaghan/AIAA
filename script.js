@@ -1,29 +1,82 @@
 var dashboard = 'https://docs.google.com/spreadsheets/d/11D2-5ZAmew6l6lHPPf259ahIJFMYCNGc9Ee5rf4LWhE/edit?usp=sharing';
+var members = 'https://docs.google.com/spreadsheets/d/1gAb8ngUywP7lRhIQdUZvOZOXuD47VHFHRM6kTzg68uA/edit?usp=sharing';
 
 function init() {
     Tabletop.init({
         key: dashboard,
         callback: dashboard_container,
         simpleSheet: true
-    })
+    }
+    )
+}
+function init1() {
+    Tabletop.init({
+         key: members,
+        callback: members_container,
+        simpleSheet: true
+        }
+    )
+}
+ function members_container(data) {
+
+     var path = window.location.pathname;
+    var path_arr = path.split("/");
+    var page = path_arr[path_arr.length - 1];
+    if (page === "members.html") {
+        console.log(data);
+        left(data);
+        right(data);
+    }
+ }
+function left(data) {
+    for (let i = 0; i < data.length; i++) {
+        var add = data[i]["DBF-members"];
+        if (add === "") {
+            continue;
+        }
+        $("#dbf-members").append("<div>\n" +
+            add +
+            "            </div>");
+    }
+}
+
+function right(data) {
+    for (let i = 0; i < data.length; i++) {
+        var add = data[i]["Micro-g-members"];
+        if (add === "") {
+            continue;
+        }
+        $("#micro-members").append("<div>\n" +
+            add +
+            "            </div>");
+    }
 }
 
 function dashboard_container(data) {
-    // console.log(data);
-    dbf(data);
-    micro(data);
-    AIAA(data);
-    dbf_eve(data);
-    micro_eve(data);
-    AIAA_eve(data);
-    progress(data);
+    var path = window.location.pathname;
+    var path_arr = path.split("/");
+    var page = path_arr[path_arr.length - 1];
+    console.log(page);
+    if (page === "Dashboard.html") {
+        console.log(data);
+        dbf(data);
+        micro(data);
+        AIAA(data);
+        dbf_eve(data);
+        micro_eve(data);
+        AIAA_eve(data);
+        progress(data);
+    }
+
+
 }
 
 window.addEventListener('DOMContentLoaded', init)
+window.addEventListener('DOMContentLoaded', init1)
 
 function progress(data) {
     var prog = data[0]["progress"];
-    console.log(prog);
+    console.log("This semester is " + prog + " done!");
     var bar = document.getElementById("prog").style;
     var bar1 = document.getElementById("prog-mob").style;
     bar.width = prog;
