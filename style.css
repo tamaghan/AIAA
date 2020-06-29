@@ -839,10 +839,10 @@ section:nth-child(2n + 1) {
 
     .mars {
         position: fixed;
-        width: 150vw;
+        width: 180vw;
         height: 130vw;
         z-index: 1;
-        left: -25%;
+        left: -40%;
     }
 
     .rover {
