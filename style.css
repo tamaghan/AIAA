@@ -234,7 +234,7 @@ section:nth-child(2n + 1) {
     }
 
     .marg-r-30 {
-        width: 20vw;
+        width: 17vw;
         margin-left: 15px;
         margin-right: 15px;
         border-style: solid;
@@ -409,9 +409,10 @@ section:nth-child(2n + 1) {
 
     .mars {
         position: fixed;
-        width: 100vw;
+        width: 110vw;
         height: 65vw;
         z-index: 1;
+        left: -5%;
     }
 
 
@@ -1039,7 +1040,16 @@ section:nth-child(2n + 1) {
 
 /***************************************************---Eboard---***********************************************/
 
-
+.title {
+    font-weight: bold;
+    font-size: 1.5vw
+}
+.title-name{
+    font-size: 1.4vw
+}
+.bold{
+    font-weight: bold;
+}
 .flex-center {
     height: 100%;
     width: 100%;
@@ -1084,7 +1094,7 @@ section:nth-child(2n + 1) {
 
     transform: translate(-50%, -50%);
     display: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background-color: rgba(255, 255, 255, 0.83);
 }
 
@@ -1396,10 +1406,6 @@ textarea {
     margin-top: -70px;
 }
 
-.micro-team-flex {
-    display: flex;
-    justify-content: space-evenly;
-}
 
 
 /**************************************************---members---***********************************************/
@@ -1408,10 +1414,6 @@ textarea {
     display: flex;
     justify-content: space-evenly;
     white-space: nowrap;
-}
-
-.tg {
-    display: inline-block;
 }
 
 #members-container {
@@ -1476,9 +1478,7 @@ textarea {
     padding-top: 105px;
 }
 
-.bold {
-    font-weight: bold;
-}
+
 
 .yellow-grad {
     background-image: linear-gradient(50deg, #fbb040 0%, #f9ed32 74%);
@@ -1541,4 +1541,11 @@ textarea {
     justify-content: space-evenly;
     height: 100%;
     display: none;
+}
+
+.grid-container{
+  display: inline-grid;
+  grid-template-columns: repeat(3, 20vw);
+  grid-template-rows: repeat(2, 25vw);
+  grid-gap: 10x;
 }
