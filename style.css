@@ -55,7 +55,7 @@ section {
 }
 
 .section-heading {
-     font-size: 4rem;
+    font-size: 4rem;
     z-index: 2;
     text-align: center;
     margin-bottom: 50px;
@@ -575,70 +575,77 @@ section:nth-child(2n + 1) {
         height: 100%;
         text-align: center;
     }
-    .achv-box{
+
+    .achv-box {
         margin-left: 40px;
     }
-    .hi{
+
+    .hi {
         background-color: transparent;
-        border:none;
+        border: none;
         border-radius: 60%;
         font-style: oblique;
         font-size: 2vw;
         padding: 5px 0 5px 0;
-text-decoration: none;
+        text-decoration: none;
         color: white;
     }
-    .hi:hover{
+
+    .hi:hover {
         color: yellow;
         font-style: normal;
     }
+
     .chat-b {
-    width: 23vw;
-    height: 16vw;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    z-index: 1;
-}
+        width: 23vw;
+        height: 16vw;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+    }
 
-.chat-w {
-    width: 23vw;
-    height: 16vw;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    z-index: 1;
-}
-.letters {
-    width: 50vw;
-    height: 50vw;
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 1;
-}
-.mem-bubble {
-    position: fixed;
-    width: 22vw;
-    height: 13vw;
-    bottom: 0;
-    top: -20vw;
-    left: 45vw;
-    right: 0;
-    margin: auto;
-    z-index: 1;
+    .chat-w {
+        width: 23vw;
+        height: 16vw;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        z-index: 1;
+    }
 
-}
-.made{
-    width: 23vw;
-    height: 18vw;
-}
+    .letters {
+        width: 50vw;
+        height: 50vw;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .mem-bubble {
+        position: fixed;
+        width: 22vw;
+        height: 13vw;
+        bottom: 0;
+        top: -20vw;
+        left: 45vw;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+
+    }
+
+    .made {
+        width: 23vw;
+        height: 18vw;
+    }
 }
 
 /*PHONE*/
@@ -1072,59 +1079,63 @@ text-decoration: none;
     .achv-title {
         display: none;
     }
+
     .chat-b {
-    width: 55vw;
-    height: 40vw;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    z-index: 1;
-}
+        width: 55vw;
+        height: 40vw;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+    }
 
-.chat-w {
-    width: 55vw;
-    height: 40vw;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    z-index: 1;
-}
-.letters {
-    width: 80vw;
-    height: 80vw;
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 1;
-}
-.mem-bubble {
-    position: fixed;
-    width: 32vw;
-    height: 23vw;
-    bottom: 0;
-    top: -25vw;
-    left: 65vw;
-    right: 0;
-    margin: auto;
-    z-index: 1;
+    .chat-w {
+        width: 55vw;
+        height: 40vw;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        z-index: 1;
+    }
 
-}
-.dash-back{
+    .letters {
+        width: 80vw;
+        height: 80vw;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+    }
 
-    z-index: -1;
-  position: absolute;
-    width: 100%;
-    bottom: 0;
-    top: 10vw;
-    left: 0;
-    right: 0;
-}
+    .mem-bubble {
+        position: fixed;
+        width: 32vw;
+        height: 23vw;
+        bottom: 0;
+        top: -25vw;
+        left: 65vw;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+
+    }
+
+    .dash-back {
+
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        top: 10vw;
+        left: 0;
+        right: 0;
+    }
 }
 
 .mars-container {
@@ -1598,10 +1609,12 @@ textarea {
     height: 100%;
 
 }
-.tab-pane{
+
+.tab-pane {
     color: white;
     font-size: 1.5vw;
 }
+
 /**************************************************---members---***********************************************/
 .alumni-container {
     overflow: auto;
@@ -1642,15 +1655,11 @@ textarea {
 }
 
 
-
 .imaginiation {
     width: 50vw;
     height: 50vw;
     color: white;
 }
-
-
-
 
 
 #left {
@@ -1765,5 +1774,5 @@ textarea {
     display: inline-grid;
     grid-template-columns: repeat(3, 20vw);
     grid-template-rows: repeat(2, 25vw);
-    grid-gap: 10x;
+    grid-gap: 10px;
 }
