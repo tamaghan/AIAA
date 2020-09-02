@@ -1,19 +1,4 @@
 /**************************************************---COVER- DELETE LATER---***********************************************/
-#cover-body {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(0, 0, 0)), color-stop(25%, rgb(28, 28, 28)), color-stop(50%, rgb(107, 107, 107)), color-stop(75%, rgb(0, 0, 0)), color-stop(100%, rgba(130, 100, 70, 0)));
-    background-size: 100% 500%;
-    -webkit-animation: animateGradient 5s infinite;
-    -webkit-animation-delay: 4s;
-    animation-delay: 2s;
-    padding-bottom: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #naming h1, h2 {
     color: white;
