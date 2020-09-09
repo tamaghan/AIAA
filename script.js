@@ -198,15 +198,19 @@ function AIAA_eve(data) {
 }
 
 function go_dark() {
-    var back = document.getElementById('real-dashboard');
+    var back1 = document.getElementById('real-dashboard');
     var head = document.getElementById('dash-head');
     var cards_mob = document.querySelectorAll(".dash-card-mobile");
     var cards = document.querySelectorAll(".dash-card");
     for (let i = 0; i < cards.length; i++) {
-        cards_mob[i].style.boxShadow = 'none';
-        cards[i].style.boxShadow = 'none';
+        cards_mob[i].style.boxShadow = '-5px 10px 10px 0 #000000';
+        cards[i].style.boxShadow = '-5px 10px 10px 0 #000000';
     }
-    back.style.backgroundColor = 'rgb(22, 22, 22)';
+    for (let i = 0; i < cards.length; i++) {
+        cards_mob[i].style.boxShadow = '-5px 10px 10px 0 #000000';
+        cards[i].style.boxShadow = '-5px 10px 10px 0 #000000';
+    }
+    back1.style.backgroundColor = 'rgb(22, 22, 22)';
     head.style.backgroundImage = 'linear-gradient(50deg, #fbb040 0%, #f9ed32 74%)';
 
 }
@@ -217,8 +221,8 @@ function go_light() {
     var cards_mob = document.querySelectorAll(".dash-card-mobile");
     var cards = document.querySelectorAll(".dash-card");
     for (let i = 0; i < cards.length; i++) {
-        cards_mob[i].style.boxShadow = ' 1px 1px 5px 2px #bfbaba';
-        cards[i].style.boxShadow = '1px 1px 5px 2px #bfbaba';
+        cards_mob[i].style.boxShadow = '-5px 10px 10px 0 #bababa';
+        cards[i].style.boxShadow = '-5px 10px 10px 0 #bababa';
     }
     back.style.backgroundColor = 'white';
     head.style.backgroundImage = 'linear-gradient(50deg, #65799b 0%, #5e2563 74%)';

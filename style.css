@@ -1281,33 +1281,31 @@ section:nth-child(2n + 1) {
 }
 
 
-#events {
-    display: flex;
-    justify-content: space-evenly;
-    height: 100%;
-    display: none;
-}
-
 #meetings-desk {
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 100%;
 }
 
 #events-desk {
-    display: flex;
     justify-content: space-evenly;
     height: 100%;
-    display: none;
 }
 
 .dash-teams {
-    background-color: #cfcccc;
-    width: 40%;
+     background: #dedede;
+    font-size: 1.2rem;
+    width: 8rem;
+    color: black;
+    box-shadow: -5px 10px 10px 0 #bababa;
     border-radius: 0.5rem;
-    color: white;
-    border-width: 0px;
-    box-shadow: 1px 1px 5px 2px #bfbaba;
+    border: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
 }
 
 #list-tab {
@@ -1322,8 +1320,7 @@ section:nth-child(2n + 1) {
     margin-top: 10px;
     color: white;
     border: none;
-    box-shadow: 1px 1px 5px 2px #bfbaba;
-}
+    box-shadow: -5px 10px 10px 0 #bababa;}
 
 .dash-card-mobile {
     width: 10rem;
@@ -1331,7 +1328,7 @@ section:nth-child(2n + 1) {
     margin: 5px;
     border: none;
     color: white;
-    box-shadow: 1px 1px 5px 2px #939393;
+    box-shadow: -5px 10px 10px 0 #bababa;
 }
 
 .dbf {
