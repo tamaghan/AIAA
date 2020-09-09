@@ -78,7 +78,7 @@ section:nth-child(2n + 1) {
     }
 
     #navv {
-        padding: 10px;
+        padding: 0px;
         z-index: 20;
     }
 
@@ -1228,23 +1228,6 @@ section:nth-child(2n + 1) {
     justify-content: center;
 }
 
-
-.members-link {
-    margin-top: 30px;
-    background: #dedede;
-    font-size: 0.95rem;
-    width: 8rem;
-    color: black;
-    border-radius: 0.2rem;
-    border: none;
-    font-weight: lighter;
-    letter-spacing: 0.05em;
-    padding: 0.8em 0.8em 0.78em;
-    text-align: center;
-    text-decoration: none;
-    z-index: 2;
-}
-
 .pad-5 {
     padding: 0;
 }
@@ -1272,10 +1255,7 @@ section:nth-child(2n + 1) {
     border-radius: 6px;
 }
 
-.members-link:hover {
-    background-image: linear-gradient(50deg, #6ec330 0%, #cbcb26 74%);
-    color: white;
-}
+
 
 /***************************************************---DASHBOARD---***********************************************/
 
