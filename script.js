@@ -79,127 +79,150 @@ function progress(data) {
     console.log("This semester is " + prog + " done!");
     var bar = document.getElementById("prog").style;
     var bar1 = document.getElementById("prog-mob").style;
+    document.getElementById("done").innerText= prog;
     bar.width = prog;
     bar1.width = prog;
 }
 
+function desk_card(name,add,link,team){
+    $(name).append("<a href=\""+ link +"\" class=\"card-link\">\n" +
+            "                                <div class=\"card dash-card " + team + " text-center dash-cards\">\n" +
+            "                                    <div class=\"card-body dash-card-body\">\n" +
+            "                                        <h5 style=\"margin: 0\" class=\"card-title\">"+ add +"</h5>\n" +
+            "                                    </div>\n" +
+            "                                </div>\n" +
+            "                            </a>");
+}
+
+function mob_card(name,add,link,team){
+     $(name).append("<a href=\""+ link +"\" class=\"card-link\">\n" +
+            "                       <div class=\"card " + team + " dash-card-mobile\">\n" +
+            "                           <div class=\"card-body\">\n" +
+            "                               <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
+            "                           </div>\n" +
+            "                       </div>\n" +
+            "                            </a>");
+}
+
 function dbf(data) {
     for (let i = 0; i < data.length; i++) {
-        var add = data[i]["DBF"];
+        var add1 = data[i]["DBF"];
+        if(add1.includes("$")){
+            var res = add1.split("$");
+            var add = res[0];
+            var zoom_link = res[1];
+        }else {
+            var add = add1;
+            var zoom_link = "#";
+        }
         if (add === "") {
             continue;
         }
-        $("#dbf-meet").append(" <div class=\"card dash-card dbf text-center dash-cards\">\n" +
-            "                            <div class=\"card-body dash-card-body\">\n" +
-            "                                <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
-            "                            </div>\n" +
-            "                        </div>");
-        $("#dbf-meet-mob").append("<div class=\"card dbf dash-card-mobile\">\n" +
-            "                        <div class=\"card-body\">\n" +
-            "                            <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
-            "                        </div>\n" +
-            "                    </div>");
+        desk_card("#dbf-meet",add,zoom_link,"dbf");
+        mob_card("#dbf-meet-mob",add,zoom_link,"dbf");
     }
 }
 
 function micro(data) {
     for (let i = 0; i < data.length; i++) {
-        var add = data[i]["Micro-g"];
+        var add1 = data[i]["Micro-g"];
+        if(add1.includes("$")){
+            var res = add1.split("$");
+            var add = res[0];
+            var zoom_link = res[1];
+        }else {
+            var add = add1;
+            var zoom_link = "#";
+        }
         if (add === "") {
             continue;
         }
-        $("#micro-meet").append(" <div class=\"card dash-card micro text-center dash-cards\">\n" +
-            "                            <div class=\"card-body dash-card-body\">\n" +
-            "                                <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
-            "                            </div>\n" +
-            "                        </div>");
-        $("#micro-meet-mob").append("<div class=\"card micro dash-card-mobile\">\n" +
-            "                        <div class=\"card-body\">\n" +
-            "                            <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
-            "                        </div>\n" +
-            "                    </div>");
+        desk_card("#micro-meet",add,zoom_link,"micro");
+        mob_card("#micro-meet-mob",add,zoom_link,"micro");
     }
 }
 
 function AIAA(data) {
     for (let i = 0; i < data.length; i++) {
-        var add = data[i]["AIAA"];
+        var add1 = data[i]["AIAA"];
+        if(add1.includes("$")){
+            var res = add1.split("$");
+            var add = res[0];
+            var zoom_link = res[1];
+        }else {
+            var add = add1;
+            var zoom_link = "#";
+        }
         if (add === "") {
             continue;
         }
-        $("#aiaa-meet").append(" <div class=\"card dash-card club text-center dash-cards\">\n" +
-            "                            <div class=\"card-body dash-card-body\">\n" +
-            "                                <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
-            "                            </div>\n" +
-            "                        </div>");
-        $("#aiaa-meet-mob").append("<div class=\"card club dash-card-mobile\">\n" +
-            "                        <div class=\"card-body\">\n" +
-            "                            <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
-            "                        </div>\n" +
-            "                    </div>");
+        desk_card("#aiaa-meet",add,zoom_link,"club");
+        mob_card("#aiaa-meet-mob",add,zoom_link,"club");
     }
 }
 
 function dbf_eve(data) {
     for (let i = 0; i < data.length; i++) {
-        var add = data[i]["DBF-eve"];
+        var add1 = data[i]["DBF-eve"];
+        if(add1.includes("$")){
+            var res = add1.split("$");
+            var add = res[0];
+            var zoom_link = res[1];
+        }else {
+            var add = add1;
+            var zoom_link = "#";
+        }
         if (add === "") {
             continue;
         }
-        $("#dbf-eve").append(" <div class=\"card dash-card dbf text-center dash-cards\">\n" +
-            "                            <div class=\"card-body dash-card-body\">\n" +
-            "                                <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
-            "                            </div>\n" +
-            "                        </div>");
-        $("#dbf-eve-mob").append("<div class=\"card dbf dash-card-mobile\">\n" +
-            "                        <div class=\"card-body\">\n" +
-            "                            <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
-            "                        </div>\n" +
-            "                    </div>");
+        desk_card("#dbf-eve",add,zoom_link,"dbf");
+        mob_card("#dbf-eve-mob",add,zoom_link,"dbf");
     }
 }
 
 function micro_eve(data) {
     for (let i = 0; i < data.length; i++) {
-        var add = data[i]["Micro-g-eve"];
+        var add1 = data[i]["Micro-g-eve"];
+        if(add1.includes("$")){
+            var res = add1.split("$");
+            var add = res[0];
+            var zoom_link = res[1];
+        }else {
+            var add = add1;
+            var zoom_link = "#";
+        }
         if (add === "") {
             continue;
         }
-        $("#micro-eve").append(" <div class=\"card dash-card micro text-center dash-cards\">\n" +
-            "                            <div class=\"card-body dash-card-body\">\n" +
-            "                                <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
-            "                            </div>\n" +
-            "                        </div>");
-        $("#micro-eve-mob").append("<div class=\"card micro dash-card-mobile\">\n" +
-            "                        <div class=\"card-body\">\n" +
-            "                            <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
-            "                        </div>\n" +
-            "                    </div>");
+        desk_card("#micro-eve",add,zoom_link,"micro");
+        mob_card("#micro-eve-mob",add,zoom_link,"micro");
     }
 }
 
 function AIAA_eve(data) {
     for (let i = 0; i < data.length; i++) {
-        var add = data[i]["AIAA-eve"];
+        var add1 = data[i]["AIAA-eve"];
+        if(add1.includes("$")){
+            var res = add1.split("$");
+            var add = res[0];
+            var zoom_link = res[1];
+        }else {
+            var add = add1;
+            var zoom_link = "#";
+        }
         if (add === "") {
             continue;
         }
-        $("#aiaa-eve").append(" <div class=\"card dash-card club text-center dash-cards\">\n" +
-            "                            <div class=\"card-body dash-card-body\">\n" +
-            "                                <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
-            "                            </div>\n" +
-            "                        </div>");
-        $("#aiaa-eve-mob").append("<div class=\"card club dash-card-mobile\">\n" +
-            "                        <div class=\"card-body\">\n" +
-            "                            <h5 style=\"margin: 0\" class=\"card-title\">" + add + "</h5>\n" +
-            "                        </div>\n" +
-            "                    </div>");
+        desk_card("#aiaa-eve",add,zoom_link,"club");
+        mob_card("#aiaa-eve-mob",add,zoom_link,"club");
     }
 }
 
 function go_dark() {
     var back1 = document.getElementById('real-dashboard');
     var head = document.getElementById('dash-head');
+    document.getElementById('semester').style.color = "white";
+    document.getElementById('prog_bar').style.backgroundColor = "#242424";
     var cards_mob = document.querySelectorAll(".dash-card-mobile");
     var cards = document.querySelectorAll(".dash-card");
     for (let i = 0; i < cards.length; i++) {
@@ -210,6 +233,12 @@ function go_dark() {
         cards_mob[i].style.boxShadow = '-5px 10px 10px 0 #000000';
         cards[i].style.boxShadow = '-5px 10px 10px 0 #000000';
     }
+    var elements = document.getElementsByClassName('dash-teams'); // get all elements
+	for(var i = 0; i < elements.length; i++){
+		elements[i].style.backgroundColor = "#242424";
+		elements[i].style.color = "white";
+		elements[i].style.boxShadow = '-5px 10px 10px 0 #000000';
+	}
     back1.style.backgroundColor = 'rgb(22, 22, 22)';
     head.style.backgroundImage = 'linear-gradient(50deg, #fbb040 0%, #f9ed32 74%)';
 
@@ -218,12 +247,21 @@ function go_dark() {
 function go_light() {
     var back = document.getElementById('real-dashboard');
     var head = document.getElementById('dash-head');
+    document.getElementById('semester').style.color = "black";
+    document.getElementById('prog_bar').style.backgroundColor = "#dedede";
+
     var cards_mob = document.querySelectorAll(".dash-card-mobile");
     var cards = document.querySelectorAll(".dash-card");
     for (let i = 0; i < cards.length; i++) {
         cards_mob[i].style.boxShadow = '-5px 10px 10px 0 #bababa';
         cards[i].style.boxShadow = '-5px 10px 10px 0 #bababa';
     }
+    var elements = document.getElementsByClassName('dash-teams'); // get all elements
+	for(var i = 0; i < elements.length; i++){
+		elements[i].style.backgroundColor = "#dedede";
+		elements[i].style.color = "black";
+		elements[i].style.boxShadow = '-5px 10px 10px 0 #bababa';
+	}
     back.style.backgroundColor = 'white';
     head.style.backgroundImage = 'linear-gradient(50deg, #65799b 0%, #5e2563 74%)';
 

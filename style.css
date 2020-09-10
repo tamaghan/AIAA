@@ -631,6 +631,10 @@ section:nth-child(2n + 1) {
         width: 23vw;
         height: 18vw;
     }
+    .eb{
+    width: 17vw;
+    height: 26vw;
+}
 }
 
 /*PHONE*/
@@ -1121,6 +1125,10 @@ section:nth-child(2n + 1) {
         left: 0;
         right: 0;
     }
+    .eb{
+    /*height: 80vw;*/
+        min-height: 85vw;
+}
 }
 
 .mars-container {
@@ -1201,9 +1209,7 @@ section:nth-child(2n + 1) {
 
 
 /***************************************************---TEAMS---***********************************************/
-.card-text {
-    font-size: larger;
-}
+
 
 /***************************************************---Eboard---***********************************************/
 
@@ -1785,5 +1791,8 @@ textarea {
 .link-box-button-black:hover {
     background-image: linear-gradient(50deg, #6ec330 0%, #cbcb26 74%);
     color: white;
+    text-decoration: none;
+}
+.card-link{
     text-decoration: none;
 }
